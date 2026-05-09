@@ -214,84 +214,165 @@ h2.section-title em{font-style:italic;font-weight:300}
 /* ============ TWO PATHS ============ */
 .paths{padding:160px 0 120px}
 @media (max-width:720px){.paths{padding:80px 0 56px}}
-.paths-head{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:end;margin-bottom:72px}
+.paths-head{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:end;margin-bottom:64px}
 @media (max-width:880px){.paths-head{grid-template-columns:1fr;gap:32px}}
 
-.paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--ink);border:1px solid var(--ink);border-radius:22px;overflow:hidden}
-@media (max-width:880px){.paths-grid{grid-template-columns:1fr}}
+.paths-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:28px;
+}
+@media (max-width:880px){.paths-grid{grid-template-columns:1fr;gap:20px}}
 
 .path{
-  background:var(--bone);
-  padding:56px 44px 48px;
   position:relative;
   display:flex;flex-direction:column;
-  min-height:620px;
+  border-radius:22px;
+  overflow:hidden;
+  min-height:680px;
+  box-shadow:0 1px 0 rgba(10,10,9,.06), 0 30px 60px -30px rgba(10,10,9,.18);
+  transition:transform .25s ease, box-shadow .25s ease;
 }
-@media (max-width:520px){.path{padding:40px 28px 36px;min-height:auto}}
-.path-tag{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:'JetBrains Mono',monospace;font-size:12px;
-  color:var(--muted-l);letter-spacing:.1em;text-transform:uppercase;
-  margin-bottom:36px;font-weight:600;
+.path:hover{transform:translateY(-3px);box-shadow:0 1px 0 rgba(10,10,9,.06), 0 40px 80px -30px rgba(10,10,9,.28)}
+@media (max-width:520px){.path{min-height:auto}}
+
+/* Header strip · colored band at the top of each card */
+.path-header{
+  padding:18px 32px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
 }
-.path-tag .num{
-  display:inline-grid;place-items:center;width:24px;height:24px;
-  border:1px solid currentColor;border-radius:5px;font-size:11px;
+.path-header .badge-num{
+  display:inline-grid;place-items:center;width:28px;height:28px;
+  border-radius:6px;font-family:'Fraunces',serif;font-size:14px;font-weight:600;letter-spacing:0;
 }
+.path-header .who{display:flex;align-items:center;gap:14px}
+.path-header .price-tag{
+  font-family:'JetBrains Mono',monospace;font-weight:600;
+  letter-spacing:.06em;
+}
+
+.path-body{
+  padding:48px 44px 44px;
+  display:flex;flex-direction:column;flex:1;
+}
+@media (max-width:520px){.path-body{padding:32px 26px 30px}}
+
 .path h3{
   font-family:'Fraunces',serif;font-weight:400;
-  font-size:clamp(34px,3.8vw,52px);
-  line-height:1.02;letter-spacing:-.03em;
-  margin-bottom:20px;
+  font-size:clamp(30px,3.4vw,46px);
+  line-height:1.04;letter-spacing:-.03em;
+  margin-bottom:18px;
 }
 .path h3 em{font-style:italic;font-weight:300}
-.path-desc{color:var(--muted-l);font-size:18px;margin-bottom:36px;max-width:42ch;line-height:1.5}
-.path-list{list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
+.path-desc{font-size:17px;margin-bottom:32px;max-width:42ch;line-height:1.55}
+.path-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:36px}
 .path-list li{
-  display:flex;gap:16px;align-items:flex-start;
-  font-size:16px;color:var(--ink);line-height:1.45;
+  display:flex;gap:14px;align-items:flex-start;
+  font-size:15.5px;line-height:1.5;
 }
 .path-list li::before{
-  content:"";width:9px;height:9px;border-radius:50%;background:var(--lime);
-  margin-top:8px;flex:0 0 9px;
+  content:"";width:8px;height:8px;border-radius:50%;
+  margin-top:8px;flex:0 0 8px;
 }
-.path-foot{margin-top:auto;padding-top:28px;border-top:1px dashed var(--rule-l)}
+.path-foot{margin-top:auto;padding-top:28px;border-top:1px dashed currentColor;opacity:1}
+.path-foot-inner{display:flex;flex-direction:column;gap:14px}
 .price-block{
-  display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:8px;
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
 }
 .price-amount{
-  font-family:'Fraunces',serif;font-weight:500;font-size:42px;
-  letter-spacing:-.025em;line-height:1;color:var(--ink);
+  font-family:'Fraunces',serif;font-weight:500;
+  font-size:clamp(40px,4.4vw,56px);
+  letter-spacing:-.03em;line-height:1;
 }
 .price-amount em{font-style:italic;font-weight:300}
 .price-unit{
   font-family:'JetBrains Mono',monospace;font-size:12px;
-  color:var(--muted-l);letter-spacing:.06em;text-transform:uppercase;font-weight:500;
+  letter-spacing:.06em;text-transform:uppercase;font-weight:600;
 }
-.price-meta{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted-l);letter-spacing:.04em;line-height:1.55;font-weight:400}
+.price-meta{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.02em;line-height:1.55;font-weight:400}
 .path-cta{
-  margin-top:24px;display:inline-flex;align-items:center;gap:12px;
-  padding:16px 26px;border-radius:999px;
-  background:var(--ink);color:var(--bone);
-  font-size:15px;font-weight:500;
+  margin-top:14px;display:inline-flex;align-items:center;gap:12px;
+  padding:18px 28px;border-radius:999px;
+  font-size:15px;font-weight:600;
   align-self:flex-start;
-  transition:transform .15s, background .15s;
-  min-height:48px;
+  transition:transform .15s, background .15s, box-shadow .15s;
+  min-height:52px;
+  letter-spacing:-.005em;
 }
-.path-cta:hover{background:var(--ink-soft);transform:translateY(-1px)}
-.path-cta::after{content:"→"}
+.path-cta::after{content:"→";font-weight:500}
+.path-cta:hover{transform:translateY(-2px)}
 
-.path.b{background:var(--ink);color:var(--bone)}
-.path.b .path-tag{color:var(--muted-d)}
-.path.b h3{color:var(--bone)}
-.path.b .path-desc{color:var(--muted-d)}
-.path.b .path-list li{color:var(--bone)}
-.path.b .path-list li::before{background:var(--lime)}
-.path.b .path-foot{border-top-color:var(--rule-d)}
-.path.b .price-amount{color:var(--bone)}
-.path.b .price-unit,.path.b .price-meta{color:var(--muted-d)}
-.path.b .path-cta{background:var(--lime);color:var(--ink);font-weight:600}
-.path.b .path-cta:hover{background:#cdff60}
+/* ===== Path A · Agencies (DARK + LIME) ===== */
+.path.agencies{background:var(--ink);color:var(--bone)}
+.path.agencies .path-header{
+  background:linear-gradient(90deg,var(--lime) 0%, #9DDB1F 100%);
+  color:var(--ink);
+  border-bottom:1px solid var(--ink-soft);
+}
+.path.agencies .path-header .badge-num{background:var(--ink);color:var(--lime)}
+.path.agencies .path-desc{color:var(--muted-d)}
+.path.agencies .path-list li{color:var(--bone)}
+.path.agencies .path-list li::before{background:var(--lime)}
+.path.agencies .path-foot{border-top-color:var(--rule-d)}
+.path.agencies .price-amount{color:var(--bone)}
+.path.agencies .price-unit,.path.agencies .price-meta{color:var(--muted-d)}
+.path.agencies .path-cta{background:var(--lime);color:var(--ink);box-shadow:0 8px 24px -8px rgba(184,255,46,.5)}
+.path.agencies .path-cta:hover{background:#cdff60;box-shadow:0 12px 32px -8px rgba(184,255,46,.7)}
+
+/* ===== Path B · Business owners (BONE + RED) ===== */
+.path.owners{background:var(--bone);color:var(--ink);border:1px solid var(--rule-l)}
+.path.owners .path-header{
+  background:linear-gradient(90deg,var(--rust) 0%, #B33616 100%);
+  color:#fff;
+}
+.path.owners .path-header .badge-num{background:#fff;color:var(--rust)}
+.path.owners .path-header .price-tag{color:#FFE5DC}
+.path.owners .path-desc{color:var(--muted-l)}
+.path.owners .path-list li{color:var(--ink-soft)}
+.path.owners .path-list li::before{background:var(--rust)}
+.path.owners .path-foot{border-top-color:var(--rule-l)}
+.path.owners .price-amount{color:var(--ink)}
+.path.owners .price-amount strong{color:var(--rust);font-weight:500}
+.path.owners .price-unit,.path.owners .price-meta{color:var(--muted-l)}
+.path.owners .path-cta{background:var(--rust);color:#fff;box-shadow:0 8px 24px -8px rgba(199,66,28,.45)}
+.path.owners .path-cta:hover{background:#A83716;box-shadow:0 12px 32px -8px rgba(199,66,28,.7)}
+
+/* Urgency banner inside Path B body */
+.urgency-banner{
+  display:flex;align-items:center;gap:12px;
+  padding:14px 18px;border-radius:10px;
+  background:rgba(199,66,28,.08);
+  border:1px solid rgba(199,66,28,.2);
+  margin-bottom:28px;
+  font-size:13.5px;line-height:1.45;color:var(--ink-soft);
+}
+.urgency-banner .pulse{
+  width:8px;height:8px;border-radius:50%;background:var(--rust);
+  flex:0 0 8px;
+  box-shadow:0 0 0 0 rgba(199,66,28,.6);
+  animation:pulse 1.8s ease-out infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(199,66,28,.55)}
+  70%{box-shadow:0 0 0 10px rgba(199,66,28,0)}
+  100%{box-shadow:0 0 0 0 rgba(199,66,28,0)}
+}
+
+@media (max-width:520px){
+  .path-header{padding:14px 22px}
+  .path-header .who{gap:10px;font-size:10px;letter-spacing:.1em}
+  .path-header .badge-num{width:22px;height:22px;font-size:12px}
+  .path-header .price-tag{font-size:10px}
+  .path h3{font-size:24px;letter-spacing:-.025em}
+  .path-desc{font-size:14.5px;margin-bottom:22px}
+  .path-list{gap:11px;margin-bottom:24px}
+  .path-list li{font-size:14px;gap:10px}
+  .path-list li::before{width:7px;height:7px;flex:0 0 7px;margin-top:6px}
+  .price-amount{font-size:34px}
+  .price-unit,.price-meta{font-size:11px}
+  .path-cta{padding:14px 20px;font-size:14px;min-height:46px}
+  .urgency-banner{padding:11px 14px;font-size:12.5px;margin-bottom:20px}
+}
 
 /* ============ PROBLEM (DARK) ============ */
 .problem{background:var(--ink);color:var(--bone);padding:160px 0}
@@ -801,45 +882,63 @@ h2.section-title em{font-style:italic;font-weight:300}
 
     <div class="paths-grid fade-up">
 
-      <div class="path b">
-        <div class="path-tag"><span class="num">A</span> For ORM &amp; reputation agencies</div>
-        <h3>White-label fulfillment, with <em>your brand</em> on the invoice.</h3>
-        <p class="path-desc">Stop telling clients "we'll try." We're the silent engine behind agencies who promise removal and actually deliver. Your retail, your relationship, our insider channel.</p>
-        <ul class="path-list">
-          <li>Volume-tiered wholesale. Typical resale spread is 2–5×.</li>
-          <li>Mutual NDA, zero contact with your end client, ever</li>
-          <li>Pilot of 5–10 reviews before you commit to volume</li>
-          <li>Lifetime re-removal guarantee written into every invoice</li>
-        </ul>
-        <div class="path-foot">
-          <div class="price-block">
-            <span class="price-amount"><em>Custom</em> by volume</span>
-            <span class="price-unit">PARTNERSHIP TIER</span>
+      <article class="path agencies">
+        <header class="path-header">
+          <div class="who"><span class="badge-num">A</span><span>For ORM &amp; reputation agencies</span></div>
+          <span class="price-tag">B2B PARTNERSHIP</span>
+        </header>
+        <div class="path-body">
+          <h3>White-label fulfillment, with <em>your brand</em> on the invoice.</h3>
+          <p class="path-desc">Stop telling clients "we'll try." We're the silent engine behind agencies who promise removal and actually deliver. Your retail, your relationship, our insider channel.</p>
+          <ul class="path-list">
+            <li>Volume-tiered wholesale. Typical resale spread is 2–5×.</li>
+            <li>Mutual NDA, zero contact with your end client, ever.</li>
+            <li>Pilot of 5–10 reviews before you commit to volume.</li>
+            <li>Lifetime re-removal guarantee written into every invoice.</li>
+          </ul>
+          <div class="path-foot">
+            <div class="path-foot-inner">
+              <div class="price-block">
+                <span class="price-amount"><em>Custom</em></span>
+                <span class="price-unit">By volume · partnership tier</span>
+              </div>
+              <div class="price-meta">We model wholesale rates against your retail and projected throughput on a 30-min call. Lower per-unit as volume scales.</div>
+              <a href="#cta" class="path-cta">Book a partnership call</a>
+            </div>
           </div>
-          <div class="price-meta">We model wholesale rates against your retail and projected throughput on a 30-min call. Lower per-unit as volume scales.</div>
-          <a href="#cta" class="path-cta">Book a partnership call</a>
         </div>
-      </div>
+      </article>
 
-      <div class="path">
-        <div class="path-tag"><span class="num">B</span> For business owners &amp; professionals</div>
-        <h3>One review's hurting you. We make it <em>go away.</em></h3>
-        <p class="path-desc">A single one-star can shave 0.3 off a 4.9 average and cost a local business thousands a month. Fake, ex-employee, competitor. Send us the link.</p>
-        <ul class="path-list">
-          <li>Send the URL. We tell you in 24 hours if it's a yes or a no.</li>
-          <li>Pay only after Google confirms removal · 3–7 days typical</li>
-          <li>No contracts, no monthly retainer, no SEO suppression nonsense</li>
-          <li>Permanent removal · written lifetime re-removal guarantee</li>
-        </ul>
-        <div class="path-foot">
-          <div class="price-block">
-            <span class="price-amount">€550</span>
-            <span class="price-unit">PER REVIEW · PAY ON SUCCESS</span>
+      <article class="path owners">
+        <header class="path-header">
+          <div class="who"><span class="badge-num">B</span><span>For business owners &amp; professionals</span></div>
+          <span class="price-tag">DIRECT REMOVAL</span>
+        </header>
+        <div class="path-body">
+          <h3>One review's hurting you. We make it <em>go away.</em></h3>
+          <p class="path-desc">A single one-star can shave 0.3 off a 4.9 average and cost a local business thousands a month. Fake, ex-employee, competitor. Send us the link.</p>
+          <div class="urgency-banner">
+            <span class="pulse" aria-hidden="true"></span>
+            <span><strong style="color:var(--rust)">Bleeding now?</strong> Median turnaround is 4 days from accepted brief. We can have your review gone before next weekend.</span>
           </div>
-          <div class="price-meta">One flat fee. Billed only after Google confirms the review is gone. No card on file, no upfront deposit, no minimum order.</div>
-          <a href="#cta" class="path-cta">Get my review removed</a>
+          <ul class="path-list">
+            <li>Send the URL. We tell you in 24 hours if it's a yes or a no.</li>
+            <li>Pay only after Google confirms removal. 3–7 days typical.</li>
+            <li>No contracts, no monthly retainer, no SEO suppression nonsense.</li>
+            <li>Permanent removal. Written lifetime re-removal guarantee.</li>
+          </ul>
+          <div class="path-foot">
+            <div class="path-foot-inner">
+              <div class="price-block">
+                <span class="price-amount"><strong>€550</strong></span>
+                <span class="price-unit">Per review · pay on success</span>
+              </div>
+              <div class="price-meta">One flat fee. Billed only after Google confirms the review is gone. No card on file, no upfront deposit, no minimum order.</div>
+              <a href="#cta" class="path-cta">Get my review removed</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
 
     </div>
   </div>
