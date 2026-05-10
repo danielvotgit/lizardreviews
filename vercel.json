@@ -2,6 +2,14 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/how-to-remove-fake-google-review-2026", "destination": "/blog/how-to-remove-fake-google-review-2026", "permanent": true },
+    { "source": "/how-long-does-google-review-removal-take", "destination": "/blog/how-long-does-google-review-removal-take", "permanent": true },
+    { "source": "/best-google-review-removal-service-2026", "destination": "/blog/best-google-review-removal-service-2026", "permanent": true },
+    { "source": "/why-google-review-removal-fails", "destination": "/blog/why-google-review-removal-fails", "permanent": true },
+    { "source": "/cost-of-negative-google-reviews", "destination": "/blog/cost-of-negative-google-reviews", "permanent": true },
+    { "source": "/white-label-review-removal-for-agencies", "destination": "/blog/white-label-review-removal-for-agencies", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
