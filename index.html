@@ -592,6 +592,39 @@ h2.section-title em{font-style:italic;font-weight:300}
 .cta-btn::after{content:"→";font-weight:500}
 .cta-mail{color:var(--muted-d);font-size:16px;border-bottom:1px solid var(--rule-d);padding-bottom:3px;min-height:44px;display:inline-flex;align-items:center}
 .cta-mail:hover{color:var(--bone);border-color:var(--bone)}
+/* CTA two-column with form */
+.cta-grid{display:grid;grid-template-columns:1fr .9fr;gap:72px;align-items:start}
+@media (max-width:920px){.cta-grid{grid-template-columns:1fr;gap:48px}}
+.cta-form-wrap{background:var(--ink-2);border:1px solid var(--rule-d);border-radius:20px;padding:40px 36px}
+@media (max-width:520px){.cta-form-wrap{padding:30px 24px}}
+.cta-form-label{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--lime);letter-spacing:.08em;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+.cta-form-title{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(24px,2.4vw,32px);line-height:1.1;letter-spacing:-.02em;color:var(--bone);margin-bottom:26px}
+.cta-form{display:flex;flex-direction:column;gap:16px}
+.cta-field{display:flex;flex-direction:column;gap:7px}
+.cta-field label{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted-d);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.cta-field input,.cta-field textarea{
+  width:100%;background:var(--ink);border:1px solid var(--rule-d);border-radius:10px;
+  padding:14px 16px;font-family:inherit;font-size:15px;color:var(--bone);
+  transition:border-color .15s;line-height:1.5;
+}
+.cta-field input::placeholder,.cta-field textarea::placeholder{color:#5f5c55}
+.cta-field input:focus,.cta-field textarea:focus{outline:none;border-color:var(--lime)}
+.cta-field textarea{resize:vertical;min-height:90px}
+.cta-form-submit{
+  margin-top:6px;display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:17px 28px;border-radius:999px;border:none;cursor:pointer;
+  background:var(--lime);color:var(--ink);font-size:16px;font-weight:600;letter-spacing:-.005em;
+  transition:transform .15s,background .15s;min-height:54px;
+}
+.cta-form-submit:hover{background:#cdff60;transform:translateY(-1px)}
+.cta-form-submit::after{content:"→";font-weight:500}
+.cta-form-note{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted-d);letter-spacing:.02em;line-height:1.5;margin-top:4px}
+.cta-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media (max-width:520px){
+  .cta-form-wrap{border-radius:16px}
+  .cta-form-title{font-size:22px;margin-bottom:20px}
+  .cta-form-submit{padding:15px 22px;font-size:15px;min-height:50px}
+}
 
 /* ============ FOOTER ============ */
 .footer{background:var(--ink);color:var(--muted-d);padding:56px 0 36px;border-top:1px solid var(--ink-soft);font-size:14px}
@@ -1241,13 +1274,46 @@ h2.section-title em{font-style:italic;font-weight:300}
 <!-- CTA -->
 <section class="cta" id="cta">
   <div class="container cta-inner">
-    <div class="fade-up">
-      <div class="section-label ondark">08 · Talk to us</div>
-      <h2>Send the link. <em>Sleep better.</em></h2>
-      <p class="cta-sub">A 10-minute call to find out if your case fits and what it would cost. No deck, no pitch, no automated follow-up sequence. Talk to a human, get a number, decide.</p>
-      <div class="cta-row">
-        <a href="https://calendly.com/lizardreviews" target="_blank" rel="noopener noreferrer" class="cta-btn">Book a 10-min call</a>
-        <a href="mailto:petr@lizardreviews.com" class="cta-mail">petr@lizardreviews.com</a>
+    <div class="cta-grid fade-up">
+      <div>
+        <div class="section-label ondark">08 · Talk to us</div>
+        <h2>Send the link. <em>Sleep better.</em></h2>
+        <p class="cta-sub">Book a 10-minute call to find out if your case fits and what it would cost. Or send the review link straight to us with the form. No deck, no pitch, no automated follow-up sequence. Talk to a human, get a number, decide.</p>
+        <div class="cta-row">
+          <a href="https://calendly.com/petr-lizardreviews" target="_blank" rel="noopener noreferrer" class="cta-btn">Book a 10-min call</a>
+          <a href="mailto:petr@lizardreviews.com" class="cta-mail">petr@lizardreviews.com</a>
+        </div>
+      </div>
+
+      <div class="cta-form-wrap">
+        <div class="cta-form-label">Send an inquiry</div>
+        <div class="cta-form-title">Tell us about your case.</div>
+        <form class="cta-form" action="https://formsubmit.co/petr@lizardreviews.com" method="POST">
+          <input type="hidden" name="_subject" value="New inquiry from lizardreviews.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://lizardreviews.com/thanks.html">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="cta-hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+
+          <div class="cta-field">
+            <label for="f-name">Name</label>
+            <input id="f-name" type="text" name="name" placeholder="Your name" required>
+          </div>
+          <div class="cta-field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="cta-field">
+            <label for="f-url">Google review link <span style="text-transform:none;color:#5f5c55">(optional)</span></label>
+            <input id="f-url" type="url" name="review_url" placeholder="https://maps.google.com/...">
+          </div>
+          <div class="cta-field">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" placeholder="A sentence or two about the review and your business." required></textarea>
+          </div>
+          <button type="submit" class="cta-form-submit">Send inquiry</button>
+          <p class="cta-form-note">Goes straight to petr@lizardreviews.com. No newsletter, no CRM sequence. We reply within one business day.</p>
+        </form>
       </div>
     </div>
   </div>
@@ -1266,7 +1332,7 @@ h2.section-title em{font-style:italic;font-weight:300}
       </div>
       <div class="footer-col"><h5>Service</h5><ul><li><a href="#paths">For agencies</a></li><li><a href="#paths">For businesses</a></li><li><a href="#how">How it works</a></li><li><a href="#numbers">Track record</a></li></ul></div>
       <div class="footer-col"><h5>Resources</h5><ul><li><a href="/blog/">Blog</a></li><li><a href="/blog/how-to-remove-fake-google-review-2026.html">Removal guide</a></li><li><a href="/blog/why-google-review-removal-fails.html">Why services fail</a></li><li><a href="/blog/cost-of-negative-google-reviews.html">Cost analysis</a></li></ul></div>
-      <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:petr@lizardreviews.com">petr@lizardreviews.com</a></li><li><a href="https://calendly.com/lizardreviews" target="_blank" rel="noopener noreferrer">Book a call</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:petr@lizardreviews.com">petr@lizardreviews.com</a></li><li><a href="https://calendly.com/petr-lizardreviews" target="_blank" rel="noopener noreferrer">Book a call</a></li></ul></div>
     </div>
     <div class="footer-bot">
       <span>LIZARD REVIEWS · MMXXVI</span>
