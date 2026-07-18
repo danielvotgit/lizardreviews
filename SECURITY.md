@@ -17,7 +17,7 @@
 | HTTP headers | **Pending** | Must be configured at deployment (Vercel/Cloudflare/server) — see §4 |
 | Schema / metadata | **Clean** | No PII leaks beyond intentional public contact email |
 | Inline JS / event handlers | **Clean** | Zero inline `onclick`/`onload` — all listeners attached via `addEventListener` |
-| Email exposure | **Acceptable risk** | `daniel@lizardreviews.com` published — intentional B2B contact, harvest risk acknowledged |
+| Email exposure | **Acceptable risk** | `petr@lizardreviews.com` published — intentional B2B contact, harvest risk acknowledged |
 
 **Critical issues:** none.
 **Recommended fixes pending:** HTTP-level security headers at deploy time (§4).
@@ -58,7 +58,7 @@ Added `<meta http-equiv="X-Content-Type-Options" content="nosniff">` to all 6 fi
 
 ### 1.6 JSON-LD audit
 - All structured data (`Organization`, `WebSite`, `BlogPosting`, `FAQPage`, `HowTo`, `BreadcrumbList`) uses correct types.
-- No PII leaked beyond `daniel@lizardreviews.com` (intentional public contact).
+- No PII leaked beyond `petr@lizardreviews.com` (intentional public contact).
 - Schema claims (1,427 reviews removed, 100% delivery rate) are factual marketing claims — not a security issue, but worth keeping accurate as the site lives.
 
 ---
@@ -75,7 +75,7 @@ Added `<meta http-equiv="X-Content-Type-Options" content="nosniff">` to all 6 fi
 |---|---|---|
 | Google Fonts (`fonts.googleapis.com`, `fonts.gstatic.com`) | Initial page load | IP + User-Agent + Referer (referrer policy mitigates the last) |
 | Calendly | When user clicks "Book a call" | Standard browsing data once on Calendly's domain — Calendly handles its own GDPR |
-| `mailto:daniel@lizardreviews.com` | When user clicks email link | Triggers user's own email client — no data leaves user's device |
+| `mailto:petr@lizardreviews.com` | When user clicks email link | Triggers user's own email client — no data leaves user's device |
 
 ### 2.3 GDPR self-host alternative (if needed later)
 If German/Austrian/strict-EU regulators flag Google Fonts as a third-party data flow, **self-host the fonts**:
@@ -91,7 +91,7 @@ This is **not required today** but is the cleanest GDPR posture if a German cour
 ## 3 · Email & contact-channel security
 
 ### 3.1 Email harvesting risk
-`daniel@lizardreviews.com` appears in plain `mailto:` links and footer text. Visible to scrapers.
+`petr@lizardreviews.com` appears in plain `mailto:` links and footer text. Visible to scrapers.
 
 **Why we accept this risk:**
 - It's an intentional B2B contact channel; obscuring it defeats the purpose.
@@ -100,7 +100,7 @@ This is **not required today** but is the cleanest GDPR posture if a German cour
 **Mitigations available if needed later:**
 - Move primary contact to a Calendly form or Cal.com embed (no exposed email).
 - Use SPF/DKIM/DMARC on `lizardreviews.com` MX records (mandatory regardless — see §5).
-- Route through an alias (`daniel@lizardreviews.com` → real inbox) so the public alias can be rotated if poisoned.
+- Route through an alias (`petr@lizardreviews.com` → real inbox) so the public alias can be rotated if poisoned.
 
 ### 3.2 Email infrastructure (DNS / outbound)
 **Critical for outbound deliverability and inbound spoofing protection.** Configure on the DNS for `lizardreviews.com`:
@@ -204,7 +204,7 @@ When `lizardreviews.com` is registered:
    ```dns
    @   IN  CAA   0 issue "letsencrypt.org"
    @   IN  CAA   0 issue "pki.goog"
-   @   IN  CAA   0 iodef "mailto:daniel@lizardreviews.com"
+   @   IN  CAA   0 iodef "mailto:petr@lizardreviews.com"
    ```
 4. **MTA-STS + TLS-RPT** for inbound email TLS enforcement (after MX is live).
 5. **2FA** on the registrar account, the DNS provider account, and the hosting account — non-negotiable.
@@ -266,6 +266,6 @@ Run this list quarterly or after any major change:
 
 ## 9 · Contact
 
-Security issues, vulnerability reports, or audit questions: **daniel@lizardreviews.com**
+Security issues, vulnerability reports, or audit questions: **petr@lizardreviews.com**
 
 Treat this document as the canonical security baseline. Update it when changes happen.
