@@ -38,6 +38,9 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 - [Why most Google review removal services fail](https://lizardreviews.com/blog/why-google-review-removal-fails): Industry analysis of five provider archetypes and their structural failure modes. With our own answers to the five qualification questions. 4 min read.
 - [The true cost of one negative Google review](https://lizardreviews.com/blog/cost-of-negative-google-reviews): Data analysis of CTR impact, conversion impact, and revenue loss from a single bad review. With 2026 data from BrightLocal and Northwestern. 4 min read.
 - [White-label review removal: a 2026 primer for ORM agencies](https://lizardreviews.com/blog/white-label-review-removal-for-agencies): Wholesale-to-retail economics (2-5x spread), partnership contract structure, operational reality. 5 min read.
+- [Can I sue for a fake Google review?](https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review): Business owner's guide to defamation and Google reviews. Section 230 (can't sue Google), cost and timeline of suing the reviewer, John Doe subpoenas to unmask anonymous reviewers, and why removal is the pragmatic alternative. 5 min read.
+- [Google review extortion: what to do](https://lizardreviews.com/blog/google-review-extortion-what-to-do): Crisis playbook for businesses hit with fake 1-star reviews and a ransom demand. Never pay, document, report to Google's extortion form, remove the attack reviews. 4 min read.
+- [How do I find out who left a Google review?](https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review): The honest answer is you almost never can. Google reveals no IP, email, or location. Only a court subpoena in a defamation case can unmask an anonymous reviewer. What you can and cannot see. 4 min read.
 
 ## Contact
 
