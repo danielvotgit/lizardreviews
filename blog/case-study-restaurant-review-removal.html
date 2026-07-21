@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Case Study: Removing 10 Fake Reviews After a Restaurant Review-Bombing Attack | Lizard Reviews</title>
+<meta name="description" content="A family-owned restaurant lost a quarter of its weekend reservations after a review-bombing attack dropped its rating from 4.7 to 3.9 in under 48 hours. Here is how the fake reviews were identified and removed." />
+<link rel="canonical" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+<meta property="og:title" content="Case Study: A Restaurant Review-Bombing Attack, and How the Fake Reviews Came Down" />
+<meta property="og:description" content="8-12 fake one-star reviews in two days. A 25% weekend reservation drop. Then bulk removal in about a week. A composite case study on review bombing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<meta name="theme-color" content="#0A0A09" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta name="article:published_time" content="2026-05-10" />
+<meta name="article:modified_time" content="2026-05-10" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0A09'/%3E%3Cpath d='M28.5 11 L30 9.5 L29 12 L27 13.5 L26.7 15 C26.5 16.5 24.7 17.7 22.5 17.5 L19 17.5 L17.7 14.2 L16.5 17.7 L14.5 13.6 L13 17.7 L11 13 L9.5 17.7 L7.5 13 L6 17.8 C5 18 4 18.5 3.2 19 C2.4 19.5 2 20.4 2.5 21 L3 19.8 L4.4 21.5 L5.6 20.5 L6 18.5 L8.5 18.3 L8.5 21.5 L7.5 22.6 L9 22.8 L9.5 21.5 L9.5 18.3 L14 18 L14 21.4 L13 22.5 L14.5 22.7 L15 21.4 L15 18 L18.7 17.8 L18.8 21 L17.8 22.2 L19.3 22.5 L19.6 21 L19.7 17.8 C21 17.7 22.2 18.3 22.6 19.3 C23.2 20.6 22.2 21.8 21 21.6 C20.5 21.5 20.5 21 21 20.7 L22 20.4 C22.2 20 21.5 19.7 21 20 C20 20.5 20 21.7 21 22.3 C22.3 23 23.8 22.4 24.7 21.4 C26.2 19.8 25.5 17.7 24.7 16.4 C25.4 15 26.5 13.4 27 12 Z' fill='%23B8FF2E'/%3E%3Ccircle cx='27' cy='13' r='.7' fill='%230A0A09'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="blog.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"BlogPosting",
+      "@id":"https://lizardreviews.com/blog/case-study-restaurant-review-removal#article",
+      "headline":"Case Study: Removing 10 Fake Reviews After a Restaurant Review-Bombing Attack",
+      "description":"A family-owned restaurant lost a quarter of its weekend reservations after a review-bombing attack dropped its rating from 4.7 to 3.9 in under 48 hours. A composite case study on how the fake reviews were identified and removed.",
+      "datePublished":"2026-05-10",
+      "dateModified":"2026-05-10",
+      "author":{"@type":"Person","name":"Petr Lobuda","jobTitle":"Director of Growth, Lizard Reviews","url":"https://lizardreviews.com/"},
+      "publisher":{"@type":"Organization","name":"Lizard Reviews","logo":{"@type":"ImageObject","url":"https://lizardreviews.com/logo.png"}},
+      "mainEntityOfPage":"https://lizardreviews.com/blog/case-study-restaurant-review-removal",
+      "wordCount":1150,
+      "articleSection":"Case study",
+      "inLanguage":"en"
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"What is Google review bombing?","acceptedAnswer":{"@type":"Answer","text":"Review bombing is a coordinated burst of negative reviews, usually one-star and usually vague, posted within a short window by accounts with little or no other review history. It differs from a single bad review because it is sudden, clustered in time, and designed to move a business's average rating quickly rather than reflect one customer's genuine experience."}},
+        {"@type":"Question","name":"Why does review bombing hurt small businesses more than large ones?","acceptedAnswer":{"@type":"Answer","text":"A business with a few dozen reviews has no buffer. Ten fake one-star reviews can drop the average by most of a point in under 48 hours and that drop is visible immediately in Google's local pack. A business with hundreds or thousands of reviews absorbs the same attack with barely a visible dent."}},
+        {"@type":"Question","name":"Does flagging each review individually work against review bombing?","acceptedAnswer":{"@type":"Answer","text":"Sometimes, but it is slow and inconsistent. Flagging is a one-at-a-time process and Google's automated system frequently returns 'no violation found' even on reviews that show every sign of being fake, since a single vague negative review does not, on its own, always trip an automated policy flag. Bulk submission through a service that packages the pattern evidence together tends to move faster."}}
+      ]
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://lizardreviews.com/"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://lizardreviews.com/blog/"},
+        {"@type":"ListItem","position":3,"name":"Case study: restaurant review bombing","item":"https://lizardreviews.com/blog/case-study-restaurant-review-removal"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <div class="container nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 120 80" fill="none"><path d="M117 30 L119 27 L117 32 L114 35 L113 38 C113 43 108 46 102 46 L95 46 L91 37 L88 47 L84 35 L81 47 L77 34 L74 47 L70 33 L67 47 L63 34 L60 47 L56 35 L53 47 L49 37 L46 48 L42 39 L39 48 C35 49 31 50 28 52 C23 55 20 60 22 63 L24 60 L27 64 L30 62 L32 55 L38 55 L39 64 L36 68 L41 69 L43 64 L43 55 L60 55 L61 64 L58 68 L63 69 L65 64 L65 55 L78 54 L79 63 L76 67 L81 68 L83 63 L83 54 C88 54 92 56 95 60 C98 65 94 69 90 68 C88 68 89 66 91 65 L94 63 C94 61 91 61 89 63 C85 66 86 70 91 72 C96 73 102 71 106 67 C111 61 108 53 106 48 C108 43 111 37 113 32 Z" fill="#B8FF2E"/><circle cx="111" cy="36" r="1.5" fill="#0A0A09"/></svg></span>
+      <span>Lizard Reviews</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#how">How it works</a>
+      <a href="/#numbers">Results</a>
+      <a href="/#paths">For agencies</a>
+      <a href="/#industry">Compare</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+    <a href="/#cta" class="nav-cta">Book a call</a>
+  </div>
+</nav>
+
+<header class="article-head">
+  <div class="container narrow">
+    <div class="crumbs"><a href="/">Home</a><span class="sep">/</span><a href="/blog/">Blog</a><span class="sep">/</span><span>Case study: review bombing</span></div>
+    <span class="article-cat">Case study · Hospitality</span>
+    <h1 class="article-title">A weekend, ten fake reviews, and a rating that dropped from 4.7 to 3.9</h1>
+    <p class="article-dek">A family-owned restaurant got hit with a classic review-bombing pattern: a burst of one-star reviews from brand-new accounts, all in under 48 hours. Here is what the attack looked like, what it cost in reservations, and how the fake reviews came down.</p>
+    <div class="article-meta">
+      <div class="author"><span class="avatar">P</span><span class="author-name">Petr Lobuda</span><span>Director of Growth, Lizard Reviews</span></div>
+      <span class="pipe">·</span><span>May 10, 2026</span><span class="pipe">·</span><span>4 min read</span>
+    </div>
+  </div>
+</header>
+
+<div class="container narrow">
+
+  <div class="tldr">
+    <span class="label">CASE SUMMARY</span>
+    <h2>A coordinated wave of fake one-star reviews cut a restaurant's rating by 0.8 points in two days. Individual flagging removed 2 of 10. Bulk professional removal removed the rest in about a week.</h2>
+    <ul>
+      <li><strong>The attack:</strong> 8-12 one-star reviews posted within 24-48 hours, all vague, all from brand-new accounts with no other review history.</li>
+      <li><strong>The damage:</strong> Rating fell from roughly 4.7 to 3.9. Weekend reservation requests dropped an estimated 25% the following week.</li>
+      <li><strong>The DIY attempt:</strong> Owner flagged each review individually through Google. Only 2 of about 10 came down after several weeks, the rest marked "no violation found."</li>
+      <li><strong>The fix:</strong> All review links submitted at once to Lizard Reviews. Cases accepted within a day, all confirmed removed within about a week, rating recovered.</li>
+    </ul>
+  </div>
+
+  <div class="def">
+    <div class="term">A note on this case study</div>
+    <div class="body">This is a <strong>composite, illustrative example</strong> built from patterns we see repeatedly across real review-bombing cases, not a writeup of one specific, identifiable client. The owner's name ("Marco"), the restaurant's cuisine, and the town described below have been changed or generalized to protect confidentiality. The numbers (review counts, rating shift, reservation drop, removal timeline) reflect the realistic range we see in actual cases of this type.</div>
+  </div>
+
+  <article class="article-body">
+
+    <p>Marco had run his family's Italian restaurant in a college town for about eight years. Nothing fancy, a few dozen tables, a regular crowd of students, faculty, and locals who had been coming since the place opened. The Google listing sat at a steady 4.7 stars built up slowly, one real dinner at a time.</p>
+
+    <p>Then, over a Thursday and Friday, that changed. Between roughly midnight and the following evening, ten one-star reviews landed on the listing. Not two or three spread out over a normal week of mixed feedback. Ten, in under 48 hours.</p>
+
+    <h2>What the fake reviews looked like</h2>
+
+    <p>The pattern was consistent enough that it announced itself. Every review was vague: "terrible service," "would not recommend," "overpriced for what you get," with no mention of a dish, a server, a date, or anything a real diner tends to include when they are annoyed enough to leave one star. None of the accounts had a profile photo. None had reviewed any other business, ever. Several were created the same week the reviews were posted.</p>
+
+    <p>Marco never learned exactly who was behind it. There was no ransom demand, no message asking for money to make the reviews disappear, which ruled out the extortion pattern some businesses face. This was something else: a coordinated wave of fabricated negative reviews with no attached ask, just damage.</p>
+
+    <p>In under two days, the listing's average dropped from 4.7 to approximately 3.9. On a profile with a modest total review count, ten fake one-star ratings carry enormous weight. There were not hundreds of prior reviews to absorb the hit.</p>
+
+    <div class="stat-highlight">
+      <div class="stat"><span class="v">8-12</span><span class="l">fake reviews, ~48 hours</span></div>
+      <div class="stat"><span class="v">4.7 → 3.9</span><span class="l">rating drop</span></div>
+      <div class="stat"><span class="v">~25%</span><span class="l">weekend reservation drop</span></div>
+    </div>
+
+    <h2>The cost showed up the following weekend</h2>
+
+    <p>Google's local pack shows the star rating right next to the business name, before a searcher clicks through to a single review. A rating that has visibly dropped reads as a signal on its own, independent of whether anyone reads the reviews behind it.</p>
+
+    <p>The following weekend, online reservation requests came in an estimated 25% lower than a typical weekend for that time of year. No obvious external cause: no bad weather, no local event pulling business away, no menu change. Just a lower number of people clicking through to book, in the exact window when the rating had visibly dropped in search.</p>
+
+    <p>For a business running on a few dozen tables and weekend covers, a quarter of a weekend's reservation requests is not a rounding error. It is the difference between a full room and empty tables on the two nights that carry the week.</p>
+
+    <h2>The DIY flagging attempt</h2>
+
+    <p>Marco's first move was the one most owners try first: flagging each fake review individually through Google's own reporting tool. It costs nothing and takes a few minutes per review, so it is a reasonable place to start.</p>
+
+    <p>Weeks passed. Of the roughly ten flagged reviews, two came down. The other eight were marked "no violation found," with no further explanation and no path to appeal beyond resubmitting the same flag and waiting again. This is a common outcome. A single vague, one-star review from a new account does not always trip Google's automated policy check on its own, even when a person looking at the pattern across all ten reviews together can tell immediately something coordinated happened.</p>
+
+    <p>That gap, between what is obvious to a human looking at the whole picture and what an individual automated flag catches, is exactly where review-bombing cases tend to stall.</p>
+
+    <div class="def">
+      <div class="term">Why individual flagging struggles here</div>
+      <div class="body">Google's flagging tool evaluates each review largely on its own. A vague one-star review, taken alone, often does not contain an obvious, machine-detectable policy violation like profanity or an off-topic rant. The violation is visible in the <strong>pattern</strong>, ten near-identical, content-free reviews from brand-new accounts landing within 48 hours, which is much easier to demonstrate when the reviews are submitted and argued together rather than one at a time.</div>
+    </div>
+
+    <h2>What changed once the reviews were submitted as a batch</h2>
+
+    <p>After the DIY route stalled, Marco found Lizard Reviews and sent over all ten review links at once, along with a short note on timing (all posted within roughly a two-day window) and the observation that none of the accounts had any other review history.</p>
+
+    <p>Submitting the reviews together, with the pattern laid out rather than left for someone to notice ten separate times, made the case easier to evaluate as what it was: a coordinated attack rather than ten unrelated complaints. The batch was reviewed and accepted within a day. All ten reviews were confirmed removed within about a week, and the listing's rating recovered close to its pre-attack level as the fake ratings dropped out of the average.</p>
+
+    <blockquote class="pullquote">
+      "I spent three weeks flagging reviews one at a time and got two removed. I sent everything to Lizard Reviews on a Monday and by the following Monday the whole mess was gone. I wish I had done that first."
+      <cite>"Marco," restaurant owner (composite quote, illustrative of client feedback patterns)</cite>
+    </blockquote>
+
+    <div class="inline-cta">
+      <div>
+        <h3>Dealing with a sudden wave of fake reviews?</h3>
+        <p>Send us the links, all of them, in one message. We tell you within 24 hours which ones we'll take. You only pay after Google confirms the removal.</p>
+      </div>
+      <a href="/#cta" class="inline-cta-btn">Book a 10-min call</a>
+    </div>
+
+    <h2>Why review bombing is a different problem than a single bad review</h2>
+
+    <p>A single genuine one-star review is something almost every business eventually gets, and it barely moves an average built on a healthy volume of reviews. Review bombing is a different category of problem for three reasons.</p>
+
+    <ol>
+      <li><strong>It's sudden.</strong> The damage lands in hours or days, not spread across months, so there is no time to dilute it with new positive reviews before it shows up in the local pack.</li>
+      <li><strong>It's coordinated.</strong> A cluster of similar, content-free reviews from new accounts in a tight time window is a pattern, and patterns are harder to argue against one review at a time than as a set.</li>
+      <li><strong>It hits small businesses hardest.</strong> A profile with 40 reviews and a profile with 4,000 reviews can receive the exact same ten-review attack. The smaller business sees its average collapse. The larger one barely registers it. Review bombing disproportionately punishes exactly the businesses least equipped to absorb it.</li>
+    </ol>
+
+    <p>That third point is worth sitting with if you run a small or mid-sized local business. Rating volume is a buffer, and if you don't have much of one, a coordinated attack does more damage per fake review than it would on a bigger competitor down the street.</p>
+
+    <h2>The practical lesson</h2>
+
+    <p>If you notice a sudden cluster of one-star reviews, from accounts you don't recognize, all vague, all landing within a day or two of each other, don't spend three weeks flagging them one by one and waiting on "no violation found" replies. Document the pattern (links, posting dates, account age if visible) and submit everything together, whether that's to Google support with the pattern spelled out or to a removal service that handles bulk cases regularly. Speed matters more with review bombing than with an ordinary bad review, because the rating drop is visible in search the moment it happens, and every day it sits there is a day of searchers seeing a lower number than the business actually earned.</p>
+
+    <p>For a broader look at a related but distinct threat, where reviewers demand payment to remove negative reviews rather than posting them anonymously in a coordinated burst, see <a href="/blog/google-review-extortion-what-to-do">Google review extortion: what to do</a>. And if you're comparing providers before deciding who handles a batch like this, our breakdown of <a href="/blog/best-google-review-removal-service-2026">the best Google review removal services in 2026</a> covers how to evaluate turnaround claims and pricing models.</p>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>What is Google review bombing?</h3>
+    <p>A coordinated burst of negative reviews, usually one-star and vague, posted within a short window by accounts with little or no other review history. It differs from an ordinary bad review because it is sudden, clustered in time, and aimed at moving the average rating quickly rather than reflecting one customer's actual experience.</p>
+
+    <h3>Why does review bombing hurt small businesses more?</h3>
+    <p>A business with a few dozen reviews has no buffer. Ten fake one-star reviews can drop the average by most of a point in under 48 hours, and that drop shows up immediately in Google's local pack. A business with hundreds or thousands of reviews absorbs the same attack with barely a visible dent.</p>
+
+    <h3>Does individual flagging work against review bombing?</h3>
+    <p>Sometimes, but slowly and inconsistently. Flagging is a one-review-at-a-time process, and Google's automated system frequently returns "no violation found" even on reviews that look obviously fake, because a single vague negative review doesn't always trip an automated policy check on its own. Submitting the whole batch together, with the pattern laid out, tends to move faster.</p>
+
+  </article>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark"><svg viewBox="0 0 120 80" fill="none"><path d="M117 30 L119 27 L117 32 L114 35 L113 38 C113 43 108 46 102 46 L95 46 L91 37 L88 47 L84 35 L81 47 L77 34 L74 47 L70 33 L67 47 L63 34 L60 47 L56 35 L53 47 L49 37 L46 48 L42 39 L39 48 C35 49 31 50 28 52 C23 55 20 60 22 63 L24 60 L27 64 L30 62 L32 55 L38 55 L39 64 L36 68 L41 69 L43 64 L43 55 L60 55 L61 64 L58 68 L63 69 L65 64 L65 55 L78 54 L79 63 L76 67 L81 68 L83 63 L83 54 C88 54 92 56 95 60 C98 65 94 69 90 68 C88 68 89 66 91 65 L94 63 C94 61 91 61 89 63 C85 66 86 70 91 72 C96 73 102 71 106 67 C111 61 108 53 106 48 C108 43 111 37 113 32 Z" fill="#B8FF2E"/><circle cx="111" cy="36" r="1.5" fill="#0A0A09"/></svg></span>
+          <span>Lizard Reviews</span>
+        </div>
+        <p class="footer-tag">Guaranteed Google review removal. White-label fulfillment for reputation agencies and direct service for business owners.</p>
+      </div>
+      <div class="footer-col"><h5>Service</h5><ul><li><a href="/#paths">For agencies</a></li><li><a href="/#paths">For businesses</a></li><li><a href="/#how">How it works</a></li><li><a href="/#numbers">Track record</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="/blog/">Blog</a></li><li><a href="how-to-remove-fake-google-review-2026">Removal guide</a></li><li><a href="best-google-review-removal-service-2026">Best providers</a></li><li><a href="why-google-review-removal-fails">Why services fail</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:petr@lizardreviews.com">petr@lizardreviews.com</a></li><li><a href="https://calendly.com/petr-lizardreviews" target="_blank" rel="noopener noreferrer">Book a call</a></li></ul></div>
+    </div>
+    <div class="footer-bot">
+      <span>LIZARD REVIEWS · MMXXVI</span>
+      <span>© 2026 · Pay-on-success Google review removal</span>
+    </div>
+  </div>
+</footer>
+
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
+<script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments)};</script>
+<script defer src="https://va.vercel-scripts.com/v1/speed-insights/script.js"></script>
+</body>
+</html>
