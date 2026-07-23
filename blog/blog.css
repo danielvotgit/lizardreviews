@@ -411,7 +411,7 @@ h1.article-title em{font-style:italic;font-weight:300}
 .footer-brand .brand-mark{width:36px;height:36px;flex:0 0 36px}
 .footer-brand .brand-mark svg{width:26px}
 .footer-tag{color:var(--muted-d);font-size:14px;max-width:38ch;line-height:1.55}
-.footer-col h5{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--bone);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
+.footer-col h4{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--bone);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .footer-col a{color:var(--muted-d);transition:color .15s}
 .footer-col a:hover{color:var(--bone)}
