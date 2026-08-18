@@ -196,6 +196,28 @@ h1.article-title em{font-style:italic;font-weight:300}
   font-size:13px;color:var(--muted-l);letter-spacing:.04em;font-weight:500;
 }
 
+/* Related reading */
+.related-reading{margin:72px 0 0;padding-top:48px;border-top:1px solid var(--rule-l)}
+.related-reading .rr-label{
+  font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted-l);
+  letter-spacing:.08em;text-transform:uppercase;font-weight:600;margin-bottom:24px;
+}
+.related-reading .rr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:720px){.related-reading .rr-grid{grid-template-columns:1fr;gap:14px}}
+.related-reading .rr-card{
+  display:block;background:var(--bone-2);border-radius:14px;padding:22px 24px;
+  transition:transform .15s,background .15s;
+}
+.related-reading .rr-card:hover{transform:translateY(-2px);background:var(--rule-l)}
+.related-reading .rr-cat{
+  font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--lime-deep);
+  letter-spacing:.06em;text-transform:uppercase;font-weight:700;margin-bottom:8px;display:block;
+}
+.related-reading .rr-title{
+  font-family:'Fraunces',serif;font-weight:500;font-size:18px;letter-spacing:-.015em;
+  line-height:1.3;color:var(--ink);
+}
+
 /* Definition / GEO citation block */
 .def{
   background:var(--bone-2);border-radius:14px;
@@ -415,7 +437,7 @@ h1.article-title em{font-style:italic;font-weight:300}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .footer-col a{color:var(--muted-d);transition:color .15s}
 .footer-col a:hover{color:var(--bone)}
-.footer-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:28px;border-top:1px solid var(--ink-soft);flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em}
+.footer-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:28px;border-top:1px solid var(--ink-soft);flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em}.footer-legal a{color:var(--muted-d);transition:color .15s;padding:0 2px}.footer-legal a:hover{color:var(--bone)}
 
 /* ============ BLOG INDEX ============ */
 .blog-hero{padding:88px 0 56px}

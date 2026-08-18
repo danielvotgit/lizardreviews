@@ -49,6 +49,11 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 - [Case study: financial advisor](https://lizardreviews.com/blog/case-study-financial-advisor-review-removal): Composite/illustrative example (U.S. wealth management practice). A prospect who never became a client called the advisor incompetent; compliance obligations blocked any public response. Accepted in a day, removed in about a week. 4 min read.
 - [Case study: real estate agent](https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal): Composite/illustrative example (U.S. independent real estate agent). Blamed in a review for a deal that fell through on the buyer's financing, entirely outside the agent's control. Removed in about a week. 4 min read.
 
+## Legal
+
+- [Terms and Conditions](https://lizardreviews.com/terms): Service description, case acceptance, pricing, pay-on-success terms, turnaround, guarantee scope, liability.
+- [Privacy Policy](https://lizardreviews.com/privacy): What data is collected via the inquiry form, legal basis, third-party processors (FormSubmit, Google Workspace, Vercel, Calendly), cookie-free analytics, GDPR rights.
+
 ## Contact
 
 - Email: petr@lizardreviews.com
