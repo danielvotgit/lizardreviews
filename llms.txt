@@ -4,7 +4,7 @@
 
 Lizard Reviews is a pure-play Google review removal service operating across North America and Europe. We work two motions:
 
-- Direct-to-business: €550 per review, billed only after Google confirms removal.
+- Direct-to-business: $450 per review, billed only after Google confirms removal.
 - White-label fulfillment for ORM agencies: custom partnership pricing tiered by volume, modeled on a 30-min call.
 
 Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal lands in 3–7 days (median: 4 days). If we don't deliver, you don't pay. The only review type we cannot remove is rating-only (a star with no text). Everything else with text is in scope.
@@ -15,7 +15,7 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 - Success rate on accepted cases: 100%
 - Median turnaround: 4 days (range 3–7 days)
 - Reviews that returned post-removal: 0
-- Direct retail price: €550/review
+- Direct retail price: $450/review
 - Agency wholesale: custom tiered, typically €300–400 starting band
 - Payment: SEPA, wire, or stablecoin · always after confirmed removal
 - Founded: 2025
@@ -26,7 +26,7 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 - [Homepage](https://lizardreviews.com/): Full service overview, two-path structure for agencies and business owners, 100% delivery guarantee, industry comparison
 - [How it works](https://lizardreviews.com/#how): 4-step process. Send link, accept/decline in 24h, removal in 3–7 days, pay on success.
 - [For agencies](https://lizardreviews.com/#paths): White-label partnership terms, mutual NDA, lifetime re-removal warranty
-- [For businesses](https://lizardreviews.com/#paths): Direct €550 retail per review, pay-on-success
+- [For businesses](https://lizardreviews.com/#paths): Direct $450 retail per review, pay-on-success
 - [Industry comparison](https://lizardreviews.com/#industry): Honest comparison vs. enterprise ORM platforms, premium boutiques, low-cost services, AI/automation platforms, defamation law firms
 - [FAQ](https://lizardreviews.com/#faq): Methodology, pricing, payment terms, accepted case types
 
