@@ -16,7 +16,7 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 - Median turnaround: 4 days (range 3–7 days)
 - Reviews that returned post-removal: 0
 - Direct retail price: $450/review
-- Agency wholesale: custom tiered, typically €300–400 starting band
+- Agency wholesale: always custom, tiered by volume and agreed on a call
 - Payment: SEPA, wire, or stablecoin · always after confirmed removal
 - Founded: 2025
 - Lifetime re-removal warranty: included on every invoice
