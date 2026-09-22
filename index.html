@@ -627,6 +627,8 @@ h2.section-title em{font-style:italic;font-weight:300}
   transition:transform .15s,background .15s;min-height:54px;
 }
 .cta-form-submit:hover{background:#cdff60;transform:translateY(-1px)}
+.cta-form-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.cta-form-submit:disabled::after{content:""}
 .cta-form-submit::after{content:"→";font-weight:500}
 .cta-form-note{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted-d);letter-spacing:.02em;line-height:1.5;margin-top:4px}
 .cta-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
@@ -1415,6 +1417,33 @@ const counterIO = new IntersectionObserver((entries) => {
   }
 }, { threshold: 0.5 });
 document.querySelectorAll('[data-count]').forEach(el => counterIO.observe(el));
+
+// Guard the inquiry form: one submit per visitor, with visible feedback while
+// the POST is in flight. Without this a slow round trip looks like nothing
+// happened and people click again, which sends duplicate inquiries.
+document.querySelectorAll('form.cta-form').forEach(form => {
+  let sent = false;
+  form.addEventListener('submit', e => {
+    if (sent) { e.preventDefault(); return; }
+    sent = true;
+    const btn = form.querySelector('.cta-form-submit');
+    if (btn) {
+      btn.dataset.label = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.setAttribute('aria-busy', 'true');
+      btn.disabled = true;
+    }
+    // If the redirect never arrives (offline, blocked), hand the form back
+    // rather than leaving the visitor stuck on a dead button.
+    setTimeout(() => {
+      if (!btn || !document.body.contains(btn)) return;
+      sent = false;
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+      btn.textContent = btn.dataset.label || 'Send inquiry';
+    }, 15000);
+  });
+});
 </script>
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
