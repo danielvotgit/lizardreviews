@@ -109,7 +109,24 @@ button{font-family:inherit;font-size:inherit}
 }
 .nav-cta:hover{background:var(--ink-soft);transform:translateY(-1px)}
 .nav-cta::after{content:"→";font-weight:400}
-@media (max-width:980px){.nav-links{display:none}}
+.nav-toggle{display:none;background:none;border:1px solid var(--rule-l);border-radius:10px;width:44px;height:44px;flex:0 0 44px;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.nav-toggle .bars,.nav-toggle .bars::before,.nav-toggle .bars::after{display:block;width:18px;height:1.5px;background:var(--ink);transition:transform .2s,background .2s}
+.nav-toggle .bars{position:relative}
+.nav-toggle .bars::before,.nav-toggle .bars::after{content:"";position:absolute;left:0}
+.nav-toggle .bars::before{top:-6px}
+.nav-toggle .bars::after{top:6px}
+.nav.open .nav-toggle .bars{background:transparent}
+.nav.open .nav-toggle .bars::before{transform:translateY(6px) rotate(45deg)}
+.nav.open .nav-toggle .bars::after{transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:980px){
+  .nav-toggle{display:inline-flex}
+  .nav-links{display:flex;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--bone);border-bottom:1px solid var(--rule-l);padding:0 32px;max-height:0;overflow:hidden;transition:max-height .28s ease;visibility:hidden}
+  .nav.open .nav-links{max-height:min(70vh,520px);overflow:auto;visibility:visible;padding:8px 32px 18px;-webkit-overflow-scrolling:touch}
+  .nav-links a{padding:15px 0;font-size:17px;color:var(--ink);border-bottom:1px solid var(--rule-l);min-height:48px;display:flex;align-items:center}
+  .nav-links a:last-child{border-bottom:0}
+}
+@media (max-width:720px){.nav.open .nav-links{padding:8px 22px 18px}.nav-links{padding:0 22px}}
+@media (max-width:420px){.nav.open .nav-links{padding:8px 18px 18px}.nav-links{padding:0 18px}}
 @media (max-width:520px){.brand{font-size:20px}.brand-mark{width:36px;height:36px;flex:0 0 36px}.brand-mark svg{width:26px}.nav-cta{padding:10px 16px;font-size:14px}}
 
 /* ============ HERO ============ */
@@ -620,6 +637,8 @@ h2.section-title em{font-style:italic;font-weight:300}
 .cta-field input::placeholder,.cta-field textarea::placeholder{color:#5f5c55}
 .cta-field input:focus,.cta-field textarea:focus{outline:none;border-color:var(--lime)}
 .cta-field textarea{resize:vertical;min-height:90px}
+/* iOS Safari zooms the whole page when a focused field is under 16px. */
+@media (max-width:980px){.cta-field input,.cta-field textarea{font-size:16px}}
 .cta-form-submit{
   margin-top:6px;display:inline-flex;align-items:center;justify-content:center;gap:12px;
   padding:17px 28px;border-radius:999px;border:none;cursor:pointer;
@@ -874,7 +893,7 @@ h2.section-title em{font-style:italic;font-weight:300}
       </span>
       <span class="brand-text">Lizard Reviews</span>
     </a>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
       <a href="#how">How it works</a>
       <a href="#numbers">Results</a>
       <a href="#paths">For agencies</a>
@@ -883,6 +902,7 @@ h2.section-title em{font-style:italic;font-weight:300}
       <a href="#faq">FAQ</a>
     </div>
     <a href="#cta" class="nav-cta">Book a call</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span class="bars"></span></button>
   </div>
 </nav>
 
@@ -1421,6 +1441,26 @@ document.querySelectorAll('[data-count]').forEach(el => counterIO.observe(el));
 // Guard the inquiry form: one submit per visitor, with visible feedback while
 // the POST is in flight. Without this a slow round trip looks like nothing
 // happened and people click again, which sends duplicate inquiries.
+// Mobile navigation. Below 980px the links collapse behind the toggle.
+document.querySelectorAll('.nav').forEach(nav => {
+  const btn = nav.querySelector('.nav-toggle');
+  const panel = nav.querySelector('.nav-links');
+  if (!btn || !panel) return;
+  const setOpen = on => {
+    nav.classList.toggle('open', on);
+    btn.setAttribute('aria-expanded', on ? 'true' : 'false');
+    btn.setAttribute('aria-label', on ? 'Close menu' : 'Open menu');
+  };
+  btn.addEventListener('click', e => { e.stopPropagation(); setOpen(!nav.classList.contains('open')); });
+  panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('click', e => { if (!nav.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && nav.classList.contains('open')) { setOpen(false); btn.focus(); }
+  });
+  // Leaving the mobile breakpoint must not strand the panel in an open state.
+  matchMedia('(min-width:981px)').addEventListener('change', e => { if (e.matches) setOpen(false); });
+});
+
 document.querySelectorAll('form.cta-form').forEach(form => {
   let sent = false;
   form.addEventListener('submit', e => {
