@@ -45,7 +45,7 @@
   --lime:#B8FF2E;
   --lime-deep:#7FCC1A;
   --rust:#C7421C;
-  --muted-d:#7A7770;
+  --muted-d:#7F7C74;
   --muted-l:#5A5852;
   --rule-d:rgba(242,239,230,.14);
   --rule-l:rgba(10,10,9,.12);
@@ -646,10 +646,10 @@ h2.section-title em{font-style:italic;font-weight:300}
 .footer-brand .brand-mark svg{width:26px}
 .footer-tag{color:var(--muted-d);font-size:14px;max-width:38ch;line-height:1.55}
 .footer-col h4{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--bone);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-.footer-col a{color:var(--muted-d);transition:color .15s}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0}
+.footer-col a{color:var(--muted-d);transition:color .15s;display:inline-block;padding:7px 0}
 .footer-col a:hover{color:var(--bone)}
-.footer-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:28px;border-top:1px solid var(--ink-soft);flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em}.footer-legal a{color:var(--muted-d);transition:color .15s;padding:0 2px}.footer-legal a:hover{color:var(--bone)}
+.footer-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:28px;border-top:1px solid var(--ink-soft);flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em}.footer-legal a{color:var(--muted-d);transition:color .15s;display:inline-block;padding:8px 6px}.footer-legal a:hover{color:var(--bone)}
 
 /* ============ ANIMATIONS ============ */
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease}
@@ -662,7 +662,7 @@ h2.section-title em{font-style:italic;font-weight:300}
   .brand{font-size:17px;gap:9px;letter-spacing:-.02em}
   .brand-mark{width:32px;height:32px;flex:0 0 32px;border-radius:7px}
   .brand-mark svg{width:23px}
-  .nav-cta{padding:9px 14px;font-size:13px;min-height:40px}
+  .nav-cta{padding:11px 14px;font-size:13px;min-height:44px}
   .hero{padding:36px 0 56px}
   .hero-eyebrow{font-size:10px;margin-bottom:24px;gap:8px;letter-spacing:.05em}
   h1.hero-title{font-size:46px;line-height:.94;letter-spacing:-.035em}
@@ -854,6 +854,9 @@ h2.section-title em{font-style:italic;font-weight:300}
   ]
 }
 </script>
+<script type="speculationrules">
+{"prefetch":[{"where":{"href_matches":"/blog/*"},"eagerness":"moderate"},{"where":{"href_matches":"/"},"eagerness":"moderate"}]}
+</script>
 </head>
 <body>
 
@@ -954,9 +957,9 @@ h2.section-title em{font-style:italic;font-weight:300}
           <h3>White-label fulfillment, with <em>your brand</em> on the invoice.</h3>
           <p class="path-desc">Stop telling clients "we'll try." We're the silent engine behind agencies who promise removal and deliver. Your retail, your relationship, our removal process.</p>
           <ul class="path-list">
-            <li>Volume-tiered wholesale. Typical resale spread is 2–5×.</li>
+            <li>Volume-tiered wholesale. Typical resale spread is 2-5×.</li>
             <li>Mutual NDA, zero contact with your end client, ever.</li>
-            <li>Pilot of 5–10 reviews before you commit to volume.</li>
+            <li>Pilot of 5-10 reviews before you commit to volume.</li>
             <li>Lifetime re-removal guarantee written into every invoice.</li>
           </ul>
           <div class="path-foot">
@@ -986,7 +989,7 @@ h2.section-title em{font-style:italic;font-weight:300}
           </div>
           <ul class="path-list">
             <li>Send the URL. We tell you in 24 hours if it's a yes or a no.</li>
-            <li>Pay only after Google confirms removal. 3–7 days typical.</li>
+            <li>Pay only after Google confirms removal. 3-7 days typical.</li>
             <li>No contracts, no monthly retainer, no SEO suppression nonsense.</li>
             <li>Permanent removal. Written lifetime re-removal guarantee.</li>
           </ul>
@@ -1025,28 +1028,28 @@ h2.section-title em{font-style:italic;font-weight:300}
       <div class="compare-cell head">Cost</div>
 
       <div class="compare-cell bad"><div class="label">Method</div><div class="v">Google flag</div></div>
-      <div class="compare-cell bad"><div class="label">Success</div><div class="v">20–40%</div></div>
+      <div class="compare-cell bad"><div class="label">Success</div><div class="v">20-40%</div></div>
       <div class="compare-cell bad"><div class="label">Time</div><div class="v">Weeks</div></div>
       <div class="compare-cell bad"><div class="label">Cost</div><div class="v">Free*</div><div class="sub">*your team's time</div></div>
 
       <div class="compare-cell bad"><div class="label">Method</div><div class="v">Support escalation</div></div>
-      <div class="compare-cell bad"><div class="label">Success</div><div class="v">30–50%</div></div>
-      <div class="compare-cell bad"><div class="label">Time</div><div class="v">Weeks–months</div></div>
+      <div class="compare-cell bad"><div class="label">Success</div><div class="v">30-50%</div></div>
+      <div class="compare-cell bad"><div class="label">Time</div><div class="v">Weeks-months</div></div>
       <div class="compare-cell bad"><div class="label">Cost</div><div class="v">Hours/week</div></div>
 
       <div class="compare-cell bad"><div class="label">Method</div><div class="v">Cease &amp; desist</div></div>
       <div class="compare-cell bad"><div class="label">Success</div><div class="v">Variable</div></div>
       <div class="compare-cell bad"><div class="label">Time</div><div class="v">Months</div></div>
-      <div class="compare-cell bad"><div class="label">Cost</div><div class="v">€1–5K+</div></div>
+      <div class="compare-cell bad"><div class="label">Cost</div><div class="v">$1-5K+</div></div>
 
       <div class="compare-cell bad"><div class="label">Method</div><div class="v">SEO suppression</div></div>
       <div class="compare-cell bad"><div class="label">Success</div><div class="v">N/A</div><div class="sub">review still exists</div></div>
-      <div class="compare-cell bad"><div class="label">Time</div><div class="v">3–9 mo</div></div>
-      <div class="compare-cell bad"><div class="label">Cost</div><div class="v">€500–3K/mo</div></div>
+      <div class="compare-cell bad"><div class="label">Time</div><div class="v">3-9 mo</div></div>
+      <div class="compare-cell bad"><div class="label">Cost</div><div class="v">$500-3K/mo</div></div>
 
       <div class="compare-cell good"><div class="label">Method</div><div class="v">Lizard Reviews</div></div>
       <div class="compare-cell good"><div class="label">Success</div><div class="v">100%</div></div>
-      <div class="compare-cell good"><div class="label">Time</div><div class="v">3–7 days</div></div>
+      <div class="compare-cell good"><div class="label">Time</div><div class="v">3-7 days</div></div>
       <div class="compare-cell good"><div class="label">Cost</div><div class="v">Pay on removal</div></div>
     </div>
   </div>
@@ -1076,46 +1079,46 @@ h2.section-title em{font-style:italic;font-weight:300}
         <div class="ic" data-label="Provider"><div class="ic-head">Enterprise ORM platform</div><div class="ic-sub">Multi-product reputation suites · venture-backed</div></div>
         <div class="ic" data-label="Success"><div class="ic-val">"Up to 90%"</div><div class="ic-note">Methodology not published</div></div>
         <div class="ic" data-label="Time"><div class="ic-val">Up to 30 days</div></div>
-        <div class="ic" data-label="Pricing"><div class="ic-val">Annual contract</div><div class="ic-note">€20–60K · seat-based</div></div>
+        <div class="ic" data-label="Pricing"><div class="ic-val">Annual contract</div><div class="ic-note">$20-60K · seat-based</div></div>
         <div class="ic" data-label="Catch"><div class="ic-val">Locked in</div><div class="ic-note">Removal is one feature among many; no per-case guarantee</div></div>
       </div>
 
       <div class="industry-row">
         <div class="ic" data-label="Provider"><div class="ic-head">Premium boutique agency</div><div class="ic-sub">Founder-led · "elite" positioning · personal brand</div></div>
         <div class="ic" data-label="Success"><div class="ic-val">Not disclosed</div><div class="ic-note">"Pay only if successful"</div></div>
-        <div class="ic" data-label="Time"><div class="ic-val">14–60 days</div></div>
-        <div class="ic" data-label="Pricing"><div class="ic-val">€500–1,500</div><div class="ic-note">Per review</div></div>
+        <div class="ic" data-label="Time"><div class="ic-val">14-60 days</div></div>
+        <div class="ic" data-label="Pricing"><div class="ic-val">$500-1,500</div><div class="ic-note">Per review</div></div>
         <div class="ic" data-label="Catch"><div class="ic-val">Capacity bottleneck</div><div class="ic-note">Solo operators · long queues · case turn-downs go unannounced</div></div>
       </div>
 
       <div class="industry-row">
         <div class="ic" data-label="Provider"><div class="ic-head">Low-cost direct service</div><div class="ic-sub">SEO-optimised domain names · heavy Google Ads spend</div></div>
         <div class="ic" data-label="Success"><div class="ic-val">Not disclosed</div><div class="ic-note">"No removal, no fee"</div></div>
-        <div class="ic" data-label="Time"><div class="ic-val">"48 hours"*</div><div class="ic-note">Often 2–6 weeks in practice</div></div>
-        <div class="ic" data-label="Pricing"><div class="ic-val">€180–250</div><div class="ic-note">Per review</div></div>
+        <div class="ic" data-label="Time"><div class="ic-val">"48 hours"*</div><div class="ic-note">Often 2-6 weeks in practice</div></div>
+        <div class="ic" data-label="Pricing"><div class="ic-val">$180-250</div><div class="ic-note">Per review</div></div>
         <div class="ic" data-label="Catch"><div class="ic-val">Standard flagging</div><div class="ic-note">Volume model · easy cases only · silent failure rate</div></div>
       </div>
 
       <div class="industry-row">
         <div class="ic" data-label="Provider"><div class="ic-head">AI / automation platform</div><div class="ic-sub">"AI-powered" review monitoring &amp; removal</div></div>
         <div class="ic" data-label="Success"><div class="ic-val">~98% (claim)</div><div class="ic-note">Best-case scenarios only</div></div>
-        <div class="ic" data-label="Time"><div class="ic-val">6–14 days</div></div>
-        <div class="ic" data-label="Pricing"><div class="ic-val">SaaS subscription</div><div class="ic-note">Or €125–250/review</div></div>
+        <div class="ic" data-label="Time"><div class="ic-val">6-14 days</div></div>
+        <div class="ic" data-label="Pricing"><div class="ic-val">SaaS subscription</div><div class="ic-note">Or $125-250/review</div></div>
         <div class="ic" data-label="Catch"><div class="ic-val">Image-based only</div><div class="ic-note">Strong on photo reviews · weak on rating-only and old reviews</div></div>
       </div>
 
       <div class="industry-row">
         <div class="ic" data-label="Provider"><div class="ic-head">Defamation law firm</div><div class="ic-sub">Legal route · cease &amp; desist · subpoena threats</div></div>
         <div class="ic" data-label="Success"><div class="ic-val">Variable</div><div class="ic-note">Depends on jurisdiction &amp; reviewer ID</div></div>
-        <div class="ic" data-label="Time"><div class="ic-val">3–9 months</div></div>
-        <div class="ic" data-label="Pricing"><div class="ic-val">€1,000–5,000+</div><div class="ic-note">Hourly retainer</div></div>
+        <div class="ic" data-label="Time"><div class="ic-val">3-9 months</div></div>
+        <div class="ic" data-label="Pricing"><div class="ic-val">$1,000-5,000+</div><div class="ic-note">Hourly retainer</div></div>
         <div class="ic" data-label="Catch"><div class="ic-val">Streisand effect</div><div class="ic-note">Public record · escalates the dispute · no removal guarantee</div></div>
       </div>
 
       <div class="industry-row us">
         <div class="ic" data-label="Provider"><div class="ic-head">Lizard Reviews</div><div class="ic-sub">Proprietary direct removal process · pure-play removal</div></div>
         <div class="ic" data-label="Success"><div class="ic-val">100%</div><div class="ic-note">On every review with text · 1,427 of 1,427</div></div>
-        <div class="ic" data-label="Time"><div class="ic-val">3–7 days</div><div class="ic-note">Median: 4 days</div></div>
+        <div class="ic" data-label="Time"><div class="ic-val">3-7 days</div><div class="ic-note">Median: 4 days</div></div>
         <div class="ic" data-label="Pricing"><div class="ic-val">$450 / custom</div><div class="ic-note">Direct flat fee · agency tiered</div></div>
         <div class="ic" data-label="Catch"><div class="ic-val">No-text only</div><div class="ic-note">Rating-only reviews (a star with no text) are the one category we cannot remove</div></div>
       </div>
@@ -1148,7 +1151,7 @@ h2.section-title em{font-style:italic;font-weight:300}
         <div class="desc">If we accept the case, it gets removed. Period.</div>
       </div>
       <div class="num-cell">
-        <div class="num">3–7<span class="unit">days</span></div>
+        <div class="num">3-7<span class="unit">days</span></div>
         <div class="label">Median turnaround</div>
         <div class="desc">From accepted brief to confirmed Google removal.</div>
       </div>
@@ -1162,7 +1165,7 @@ h2.section-title em{font-style:italic;font-weight:300}
     <div class="numbers-callout fade-up">
       <div class="callout-tag">What "100%" means</div>
       <p class="callout-text">
-        Our direct removal process handles every review with text. The one category outside our reach: rating-only reviews (a star with no text). <strong>Send us the link. If it has text, it's gone in 3–7 days. If we don't deliver, you don't pay.</strong>
+        Our direct removal process handles every review with text. The one category outside our reach: rating-only reviews (a star with no text). <strong>Send us the link. If it has text, it's gone in 3-7 days. If we don't deliver, you don't pay.</strong>
       </p>
     </div>
   </div>
@@ -1191,7 +1194,7 @@ h2.section-title em{font-style:italic;font-weight:300}
       <div class="step">
         <div class="step-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg></div>
         <div class="step-num">STEP 03</div>
-        <h3>Removal in 3–7 days.</h3>
+        <h3>Removal in 3-7 days.</h3>
         <p>Our direct removal process handles the case behind the scenes. Median turnaround is four days. You get a confirmation the moment Google reflects the change.</p>
       </div>
       <div class="step">
@@ -1232,7 +1235,7 @@ h2.section-title em{font-style:italic;font-weight:300}
         <div class="case-meta"><span>Law firm · ex-employee</span><span class="badge">REMOVED</span></div>
         <div class="case-stars" aria-label="One star">★ ☆ ☆ ☆ ☆</div>
         <p class="case-review">"Toxic management, the partner is unethical, do not hire them for any case…"</p>
-        <div class="case-result"><span class="out">Legal route quoted: <strong>€3,200</strong></span><span class="days">5d</span></div>
+        <div class="case-result"><span class="out">Legal route quoted: <strong>$3,200</strong></span><span class="days">5d</span></div>
       </article>
     </div>
   </div>

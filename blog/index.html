@@ -33,7 +33,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <style>
-:root{--bone:#F2EFE6;--bone-2:#E8E4D7;--ink:#0A0A09;--ink-2:#15140F;--ink-soft:#2A2823;--lime:#B8FF2E;--lime-deep:#7FCC1A;--rust:#C7421C;--muted-d:#7A7770;--muted-l:#5A5852;--rule-d:rgba(242,239,230,.14);--rule-l:rgba(10,10,9,.12)}
+:root{--bone:#F2EFE6;--bone-2:#E8E4D7;--ink:#0A0A09;--ink-2:#15140F;--ink-soft:#2A2823;--lime:#B8FF2E;--lime-deep:#7FCC1A;--rust:#C7421C;--muted-d:#7F7C74;--muted-l:#5A5852;--rule-d:rgba(242,239,230,.14);--rule-l:rgba(10,10,9,.12)}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{background:var(--bone);color:var(--ink);font-family:'Bricolage Grotesque','Inter Tight',system-ui,-apple-system,sans-serif;font-size:19px;line-height:1.6;letter-spacing:-.005em;font-variation-settings:"wdth" 95;overflow-x:hidden}
@@ -105,11 +105,11 @@ button{font-family:inherit;font-size:inherit}
 .footer-brand .brand-mark svg{width:26px}
 .footer-tag{color:var(--muted-d);font-size:14px;max-width:38ch;line-height:1.55}
 .footer-col h4{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--bone);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-.footer-col a{color:var(--muted-d);transition:color .15s}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0}
+.footer-col a{color:var(--muted-d);transition:color .15s;display:inline-block;padding:7px 0}
 .footer-col a:hover{color:var(--bone)}
 .footer-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:28px;border-top:1px solid var(--ink-soft);flex-wrap:wrap;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.05em}
-.footer-legal a{color:var(--muted-d);transition:color .15s;padding:0 2px}.footer-legal a:hover{color:var(--bone)}
+.footer-legal a{color:var(--muted-d);transition:color .15s;display:inline-block;padding:8px 6px}.footer-legal a:hover{color:var(--bone)}
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .fade-up.in{opacity:1;transform:none}
 @media (max-width:480px){
@@ -209,6 +209,9 @@ button{font-family:inherit;font-size:inherit}
   ]
 }
 </script>
+<script type="speculationrules">
+{"prefetch":[{"where":{"href_matches":"/blog/*"},"eagerness":"moderate"},{"where":{"href_matches":"/"},"eagerness":"moderate"}]}
+</script>
 </head>
 <body>
 
@@ -281,7 +284,7 @@ button{font-family:inherit;font-size:inherit}
       <article class="blog-card fade-up">
         <span class="cat">Data · Economics</span>
         <h3>The true cost of <em>one</em> negative Google review.</h3>
-        <p>One 1-star drops average rating, kills CTR by 8-15%, and demotes local-pack rank. For a typical local business, that's €2,400-€4,500 per month in lost revenue. With 2026 data from BrightLocal and Northwestern.</p>
+        <p>One 1-star drops average rating, kills CTR by 8-15%, and demotes local-pack rank. For a typical local business, that's $2,400-$4,500 per month in lost revenue. With 2026 data from BrightLocal and Northwestern.</p>
         <div class="meta"><span>MAY 2026 · 4 MIN</span><a href="/blog/cost-of-negative-google-reviews" class="read">Read</a></div>
       </article>
 
@@ -450,7 +453,7 @@ button{font-family:inherit;font-size:inherit}
         <span class="cat">For agencies · Procurement</span>
         <h3>Vendor due diligence: the checklist <em>nobody published.</em></h3>
         <p>Contract stack, white-label integrity, SLAs, method risk, and the attribution problem every removal vendor dodges. Usable in a real evaluation, including against us.</p>
-        <div class="meta"><span>SEPTEMBER 2026 · 9 MIN</span><a href="/blog/review-removal-vendor-due-diligence" class="read">Read</a></div>
+        <div class="meta"><span>SEPTEMBER 2026 · 6 MIN</span><a href="/blog/review-removal-vendor-due-diligence" class="read">Read</a></div>
       </article>
     </div>
 
