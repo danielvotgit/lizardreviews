@@ -172,6 +172,7 @@ button{font-family:inherit;font-size:inherit}
 .blog-card h3{font-size:22px}
 }
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}.fade-up{opacity:1;transform:none}}
+.skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--ink);color:var(--bone);padding:10px 16px;border-radius:8px;font-size:14px;transition:top .2s}.skip:focus{top:12px}
 </style>
 
 <script type="application/ld+json">
@@ -231,6 +232,7 @@ button{font-family:inherit;font-size:inherit}
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <nav class="nav" aria-label="Primary">
   <div class="container nav-inner">
@@ -250,6 +252,8 @@ button{font-family:inherit;font-size:inherit}
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span class="bars"></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <header class="blog-hero">
   <div class="container">
@@ -477,6 +481,8 @@ button{font-family:inherit;font-size:inherit}
 
   </div>
 </section>
+
+</main>
 
 <footer class="footer">
   <div class="container">
