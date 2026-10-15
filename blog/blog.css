@@ -294,10 +294,10 @@ h1.article-title em{font-style:italic;font-weight:300}
 .tbl-row.us{background:var(--ink-2);color:var(--bone)}
 .tbl-row.us .tbl-c{border-right-color:var(--rule-d)}
 .tbl-row.us .tbl-c strong{color:var(--lime)}
-.tbl-2{grid-template-columns:1fr 1fr}
-.tbl-3{grid-template-columns:1.4fr 1fr 1fr}
-.tbl-4{grid-template-columns:1.4fr 1fr 1fr 1fr}
-.tbl-5{grid-template-columns:1.4fr 1fr 1fr 1fr 1fr}
+.tbl-2 .tbl-row{grid-template-columns:1fr 1fr}
+.tbl-3 .tbl-row{grid-template-columns:1.4fr 1fr 1fr}
+.tbl-4 .tbl-row{grid-template-columns:1.4fr 1fr 1fr 1fr}
+.tbl-5 .tbl-row{grid-template-columns:1.4fr 1fr 1fr 1fr 1fr}
 @media (max-width:720px){
   .tbl-row:not(.head){grid-template-columns:1fr;padding:8px 0}
   .tbl-row.head{display:none}
@@ -540,3 +540,44 @@ h1.article-title em{font-style:italic;font-weight:300}
   .fade-up{opacity:1;transform:none}
 }
 .skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--ink);color:var(--bone);padding:10px 16px;border-radius:8px;font-size:14px;transition:top .2s}.skip:focus{top:12px}
+
+/* Chart (inline SVG bar chart with caption) */
+.chart{margin:44px 0;padding:28px 28px 22px;background:var(--bone-2);border-radius:16px}
+.chart svg{width:100%;height:auto;display:block}
+.chart .bar{fill:var(--ink)}
+.chart .bar.hl{fill:var(--lime);stroke:var(--ink);stroke-width:1.5}
+.chart .axis{stroke:var(--rule-l);stroke-width:1}
+.chart text{font-family:'JetBrains Mono',monospace;fill:var(--ink);font-size:13px}
+.chart .yr{fill:var(--muted-l);font-size:12px;letter-spacing:.06em}
+.chart .gr{fill:var(--muted-l);font-size:11px}
+.chart .val{font-size:15px;font-weight:600}
+.chart figcaption{margin-top:16px;font-size:14px;color:var(--muted-l);line-height:1.6}
+@media (max-width:600px){.chart{padding:20px 14px 16px}.chart .val{font-size:17px}.chart .yr{font-size:14px}}
+
+/* Referral program form and facts */
+.ref-form{margin:40px 0;padding:36px;background:var(--ink);color:var(--bone);border-radius:20px;display:grid;gap:18px}
+.ref-form h3{font-family:'Fraunces',serif;font-weight:400;font-size:32px;letter-spacing:-.02em;line-height:1.1;color:var(--bone);margin:0}
+.ref-form .lead{color:var(--muted-d);font-size:16px;line-height:1.55;margin:0}
+.ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ref-field label{display:block;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-d);margin-bottom:8px}
+.ref-field input,.ref-field textarea{width:100%;font:inherit;font-size:16px;padding:14px 16px;border-radius:10px;border:1px solid var(--rule-d);background:var(--ink-2);color:var(--bone)}
+.ref-field textarea{min-height:96px;resize:vertical}
+.ref-field input::placeholder,.ref-field textarea::placeholder{color:var(--muted-d)}
+.ref-field input:focus-visible,.ref-field textarea:focus-visible,.ref-check input:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.ref-check{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.5;color:var(--bone)}
+.ref-check input{width:22px;height:22px;margin-top:1px;accent-color:var(--lime);flex:none}
+.ref-check a{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+.ref-submit{min-height:52px;padding:0 28px;border:0;border-radius:999px;background:var(--lime);color:var(--ink);font-weight:600;font-size:16px;cursor:pointer;justify-self:start;transition:transform .2s,background .2s}
+.ref-submit:hover{background:#cdff60;transform:translateY(-1px)}
+.ref-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.ref-note{font-size:13px;color:var(--muted-d);line-height:1.55;margin:0}
+.ref-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media (max-width:640px){.ref-form{padding:24px 20px}.ref-grid{grid-template-columns:1fr}.ref-form h3{font-size:28px}.ref-submit{justify-self:stretch}}
+@media (prefers-reduced-motion:reduce){.ref-submit{transition:none}}
+.article-body .ref-form a:not(.btn){color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+.article-body .ref-form a:not(.btn):hover{color:var(--bone)}
+.article-body .ref-form .lead,.article-body .ref-form .ref-note{color:var(--muted-d)}
+.article-body .ref-form .ref-check span{color:var(--bone)}
+.stat-highlight .stat .v,.stat-highlight .stat .l{display:block}
+.crumbs a{display:inline-block;padding:12px 2px;margin:-12px 0}
+.footer-legal a{display:inline-block;padding:12px 4px;margin:-12px 0}

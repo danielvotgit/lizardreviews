@@ -26,3 +26,13 @@ document.querySelectorAll('.nav').forEach(nav => {
   // Leaving the mobile breakpoint must not strand the panel in an open state.
   matchMedia('(min-width:981px)').addEventListener('change', e => { if (e.matches) setOpen(false); });
 });
+
+// One submit per visitor on plain forms, with visible feedback while the request is in flight.
+document.querySelectorAll('form.js-once').forEach(form => {
+  form.addEventListener('submit', e => {
+    if (form.dataset.sent) { e.preventDefault(); return; }
+    form.dataset.sent = '1';
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) { btn.disabled = true; btn.textContent = btn.dataset.sending || 'Sending…'; }
+  });
+});
