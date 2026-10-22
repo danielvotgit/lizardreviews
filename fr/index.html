@@ -506,6 +506,8 @@ h2.section-title em{font-style:italic;font-weight:300}
 }
 .num-cell .num sup{font-size:.32em;font-weight:500;font-family:'Bricolage Grotesque',sans-serif;color:var(--muted-l);margin-top:.6em}
 .num-cell .num .unit{font-size:.32em;font-family:'JetBrains Mono',monospace;color:var(--muted-l);font-weight:500;margin-top:.85em}
+.num-cell .num.num-range{white-space:nowrap;font-size:clamp(44px,5.2vw,100px)}
+@media (max-width:880px){.num-cell .num.num-range{font-size:clamp(52px,9vw,100px)}}
 .num-cell .label{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted-l);letter-spacing:.08em;text-transform:uppercase;margin-top:22px;font-weight:600}
 .num-cell .desc{font-size:14px;color:var(--muted-l);margin-top:10px;line-height:1.45}
 .num-cell.accent{background:var(--lime)}
@@ -1082,7 +1084,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
           "name": "À quelle vitesse pouvons-nous démarrer ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Le premier dossier démarre généralement dans les 24 heures suivant un brief confirmé. La plupart des suppressions sont confirmées par Google entre le troisième et le septième jour. La médiane sur nos 1 427 dossiers est de quatre jours."
+            "text": "Le premier dossier démarre généralement dans les 24 heures suivant un brief confirmé. Les suppressions sont confirmées par Google dans les 24 à 48 heures suivant l'acceptation d'un dossier."
           }
         },
         {
@@ -1151,7 +1153,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         <div class="label">Registre en direct · 4 mois glissants</div>
         <div class="stat-row"><span class="stat-key">Avis supprimés</span><span class="stat-val">1 427</span></div>
         <div class="stat-row"><span class="stat-key">Taux de réussite</span><span class="stat-val lime">100%</span></div>
-        <div class="stat-row"><span class="stat-key">Délai médian</span><span class="stat-val">4 jours</span></div>
+        <div class="stat-row"><span class="stat-key">Délai</span><span class="stat-val">24-48 heures</span></div>
         <div class="stat-row"><span class="stat-key">Remboursements dus</span><span class="stat-val">0</span></div>
         <div class="stat-row"><span class="stat-key">Avis réapparus</span><span class="stat-val">0</span></div>
       </aside>
@@ -1162,7 +1164,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
 <!-- TICKER -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span><span class="accent">●</span> Avis 1 étoile supprimé · automobile · 6 ans · 3 jours</span> <span><span class="accent">●</span> Diffamation supprimée · medspa · 2 jours</span> <span><span class="accent">●</span> Diffamation d'un ancien salarié · cabinet d'avocats · 5 jours</span> <span><span class="accent">●</span> Attaque d'un concurrent · restaurant · 4 jours</span> <span><span class="accent">●</span> Faux avis · cabinet dentaire · 3 jours</span> <span><span class="accent">●</span> Patient mécontent · clinique · 6 jours</span> <span><span class="accent">●</span> Avis 1 étoile supprimé · automobile · 6 ans · 3 jours</span> <span><span class="accent">●</span> Diffamation supprimée · medspa · 2 jours</span> <span><span class="accent">●</span> Diffamation d'un ancien salarié · cabinet d'avocats · 5 jours</span> <span><span class="accent">●</span> Attaque d'un concurrent · restaurant · 4 jours</span> <span><span class="accent">●</span> Faux avis · cabinet dentaire · 3 jours</span> <span><span class="accent">●</span> Patient mécontent · clinique · 6 jours</span>
+    <span><span class="accent">●</span> Avis 1 étoile supprimé · automobile · 6 ans · 2 jours</span> <span><span class="accent">●</span> Diffamation supprimée · medspa · 1 jour</span> <span><span class="accent">●</span> Diffamation d'un ancien salarié · cabinet d'avocats · 2 jours</span> <span><span class="accent">●</span> Attaque d'un concurrent · restaurant · 2 jours</span> <span><span class="accent">●</span> Faux avis · cabinet dentaire · 1 jour</span> <span><span class="accent">●</span> Patient mécontent · clinique · 2 jours</span> <span><span class="accent">●</span> Avis 1 étoile supprimé · automobile · 6 ans · 2 jours</span> <span><span class="accent">●</span> Diffamation supprimée · medspa · 1 jour</span> <span><span class="accent">●</span> Diffamation d'un ancien salarié · cabinet d'avocats · 2 jours</span> <span><span class="accent">●</span> Attaque d'un concurrent · restaurant · 2 jours</span> <span><span class="accent">●</span> Faux avis · cabinet dentaire · 1 jour</span> <span><span class="accent">●</span> Patient mécontent · clinique · 2 jours</span>
   </div>
 </div>
 
@@ -1216,11 +1218,11 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
           <h3>Un seul avis vous nuit. Nous le faisons <em>disparaître.</em></h3>
           <p class="path-desc">Un seul avis à une étoile peut faire perdre 0,3 point à une moyenne de 4,9 et coûter des milliers par mois à un commerce local. Faux, d'un ancien salarié, d'un concurrent. Envoyez-nous le lien.</p>
           <div class="urgency-banner">
-            <span class="pulse" aria-hidden="true"></span> <span><strong class="t-rust">Ça vous coûte déjà cher ?</strong> Le délai médian est de 4 jours à partir de l'acceptation du dossier. Votre avis peut avoir disparu avant le week-end prochain.</span>
+            <span class="pulse" aria-hidden="true"></span> <span><strong class="t-rust">Ça vous coûte déjà cher ?</strong> Le délai est de 24 à 48 heures à partir de l'acceptation du dossier. Nous pouvons faire disparaître votre avis en deux jours.</span>
           </div>
           <ul class="path-list">
             <li>Envoyez l'URL. Sous 24 heures, nous vous disons oui ou non.</li>
-            <li>Vous payez uniquement après confirmation de la suppression par Google. Délai habituel : 3 à 7 jours.</li>
+            <li>Vous payez uniquement après confirmation de la suppression par Google. Délai habituel : 24-48 heures.</li>
             <li>Pas de contrat, pas d'abonnement mensuel, pas de fumisterie de « suppression SEO ».</li>
             <li>Suppression définitive. Garantie écrite de re-suppression à vie.</li>
           </ul>
@@ -1279,7 +1281,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
 
       <div class="compare-cell good"><div class="label">Méthode</div><div class="v">Lizard Reviews</div></div>
       <div class="compare-cell good"><div class="label">Réussite</div><div class="v">100%</div></div>
-      <div class="compare-cell good"><div class="label">Délai</div><div class="v">3-7 jours</div></div>
+      <div class="compare-cell good"><div class="label">Délai</div><div class="v">24-48 heures</div></div>
       <div class="compare-cell good"><div class="label">Coût</div><div class="v">Paiement à la suppression</div></div>
     </div>
   </div>
@@ -1316,7 +1318,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="industry-row">
         <div class="ic" data-label="Prestataire"><div class="ic-head">Agence boutique premium</div><div class="ic-sub">Dirigée par le fondateur · positionnement « élite » · marque personnelle</div></div>
         <div class="ic" data-label="Réussite"><div class="ic-val">Non communiqué</div><div class="ic-note">« Payez uniquement en cas de succès »</div></div>
-        <div class="ic" data-label="Délai"><div class="ic-val">14-60 jours</div></div>
+        <div class="ic" data-label="Délai"><div class="ic-val">14-30 jours</div></div>
         <div class="ic" data-label="Tarifs"><div class="ic-val">$500-1,500</div><div class="ic-note">Par avis</div></div>
         <div class="ic" data-label="Le piège"><div class="ic-val">Goulot d'étranglement de capacité</div><div class="ic-note">Opérateurs solo · longues files d'attente · les refus ne sont pas annoncés</div></div>
       </div>
@@ -1324,7 +1326,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="industry-row">
         <div class="ic" data-label="Prestataire"><div class="ic-head">Service direct à bas prix</div><div class="ic-sub">Noms de domaine optimisés SEO · gros budget Google Ads</div></div>
         <div class="ic" data-label="Réussite"><div class="ic-val">Non communiqué</div><div class="ic-note">« Pas de suppression, pas de frais »</div></div>
-        <div class="ic" data-label="Délai"><div class="ic-val">« 48 heures »*</div><div class="ic-note">En pratique, souvent 2 à 6 semaines</div></div>
+        <div class="ic" data-label="Délai"><div class="ic-val">4-30 jours</div><div class="ic-note">Habituel en pratique</div></div>
         <div class="ic" data-label="Tarifs"><div class="ic-val">$180-250</div><div class="ic-note">Par avis</div></div>
         <div class="ic" data-label="Le piège"><div class="ic-val">Signalement standard</div><div class="ic-note">Modèle de volume · cas faciles uniquement · taux d'échec passé sous silence</div></div>
       </div>
@@ -1348,7 +1350,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="industry-row us">
         <div class="ic" data-label="Prestataire"><div class="ic-head">Lizard Reviews</div><div class="ic-sub">Nos propres méthodes uniques · suppression exclusivement</div></div>
         <div class="ic" data-label="Réussite"><div class="ic-val">100%</div><div class="ic-note">Sur tout avis avec texte · 1 427 sur 1 427</div></div>
-        <div class="ic" data-label="Délai"><div class="ic-val">3-7 jours</div><div class="ic-note">Médiane : 4 jours</div></div>
+        <div class="ic" data-label="Délai"><div class="ic-val">24-48 heures</div><div class="ic-note">À partir de l'acceptation du dossier</div></div>
         <div class="ic" data-label="Tarifs"><div class="ic-val">$450 / sur mesure</div><div class="ic-note">Forfait direct · paliers pour agences</div></div>
         <div class="ic" data-label="Le piège"><div class="ic-val">Sans texte uniquement</div><div class="ic-note">Les avis avec note seule (sans texte) sont la seule catégorie que nous ne pouvons pas supprimer</div></div>
       </div>
@@ -1381,8 +1383,8 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         <div class="desc">Si nous acceptons le dossier, l'avis est supprimé. Point final.</div>
       </div>
       <div class="num-cell">
-        <div class="num">3-7<span class="unit">jours</span></div>
-        <div class="label">Délai médian</div>
+        <div class="num num-range">24-48<span class="unit">heures</span></div>
+        <div class="label">Délai</div>
         <div class="desc">De l'acceptation du dossier à la suppression confirmée par Google.</div>
       </div>
       <div class="num-cell">
@@ -1395,7 +1397,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
     <div class="numbers-callout fade-up">
       <div class="callout-tag">Ce que signifie « 100% »</div>
       <p class="callout-text">
-        Nos propres méthodes uniques traitent tout avis comportant du texte. La seule catégorie hors de notre portée : les avis avec seulement une note (une étoile sans texte). <strong>Envoyez-nous le lien. S'il comporte du texte, il disparaît en 3 à 7 jours. Si nous ne livrons pas, vous ne payez pas.</strong>
+        Nos propres méthodes uniques traitent tout avis comportant du texte. La seule catégorie hors de notre portée : les avis avec seulement une note (une étoile sans texte). <strong>Envoyez-nous le lien. S'il comporte du texte, il disparaît en 24-48 heures. Si nous ne livrons pas, vous ne payez pas.</strong>
       </p>
     </div>
   </div>
@@ -1424,8 +1426,8 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="step">
         <div class="step-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg></div>
         <div class="step-num">ÉTAPE 03</div>
-        <h3>Suppression en 3 à 7 jours.</h3>
-        <p>Nos propres méthodes uniques traitent le dossier en coulisses. Le délai médian est de quatre jours. Vous recevez une confirmation dès que Google reflète le changement.</p>
+        <h3>Suppression en 24-48 heures.</h3>
+        <p>Nos propres méthodes uniques traitent le dossier en coulisses. Vous recevez une confirmation dès que Google reflète le changement.</p>
       </div>
       <div class="step">
         <div class="step-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
@@ -1451,21 +1453,21 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         <div class="case-meta"><span>Automobile · 6 ans d'ancienneté</span><span class="badge">SUPPRIMÉ</span></div>
         <div class="case-stars" aria-label="Une étoile">★ ☆ ☆ ☆ ☆</div>
         <p class="case-review">« On m'a vendu une épave. Le directeur m'a raccroché au nez deux fois. Évitez ce concessionnaire à tout prix. »</p>
-        <div class="case-result"><span class="out">Deux prestataires précédents ont dit : <strong>impossible</strong></span><span class="days">3j</span></div>
+        <div class="case-result"><span class="out">Deux prestataires précédents ont dit : <strong>impossible</strong></span><span class="days">2j</span></div>
       </article>
 
       <article class="case">
         <div class="case-meta"><span>Medspa · diffamation</span><span class="badge">SUPPRIMÉ</span></div>
         <div class="case-stars" aria-label="Une étoile">★ ☆ ☆ ☆ ☆</div>
         <p class="case-review">« Insalubre, non professionnel, cet endroit est une arnaque. Fuyez ou vous le regretterez. »</p>
-        <div class="case-result"><span class="out">Taux de réussite du signalement standard : <strong>~5%</strong></span><span class="days">2j</span></div>
+        <div class="case-result"><span class="out">Taux de réussite du signalement standard : <strong>~5%</strong></span><span class="days">1j</span></div>
       </article>
 
       <article class="case">
         <div class="case-meta"><span>Cabinet d'avocats · ancien salarié</span><span class="badge">SUPPRIMÉ</span></div>
         <div class="case-stars" aria-label="Une étoile">★ ☆ ☆ ☆ ☆</div>
         <p class="case-review">« Direction toxique, l'associé est sans éthique, ne les engagez pour aucun dossier… »</p>
-        <div class="case-result"><span class="out">Devis par voie judiciaire : <strong>$3 200</strong></span><span class="days">5j</span></div>
+        <div class="case-result"><span class="out">Devis par voie judiciaire : <strong>$3 200</strong></span><span class="days">2j</span></div>
       </article>
     </div>
   </div>
@@ -1513,7 +1515,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         </div>
         <div class="faq-item">
           <h3 class="faq-h"><button class="faq-q" id="faq-q8" aria-expanded="false" aria-controls="faq-a8">À quelle vitesse pouvons-nous démarrer ?<span class="plus" aria-hidden="true"></span></button></h3>
-          <div class="faq-a" id="faq-a8" role="region" aria-labelledby="faq-q8"><div class="faq-a-inner">Le premier dossier démarre généralement dans les 24 heures suivant un brief confirmé. La plupart des suppressions sont confirmées par Google entre le troisième et le septième jour. La médiane sur nos 1 427 dossiers est de quatre jours.</div></div>
+          <div class="faq-a" id="faq-a8" role="region" aria-labelledby="faq-q8"><div class="faq-a-inner">Le premier dossier démarre généralement dans les 24 heures suivant un brief confirmé. Les suppressions sont confirmées par Google dans les 24 à 48 heures suivant l'acceptation d'un dossier.</div></div>
         </div>
         <div class="faq-item">
           <h3 class="faq-h"><button class="faq-q" id="faq-q9" aria-expanded="false" aria-controls="faq-a9">Comment se déroule le paiement ?<span class="plus" aria-hidden="true"></span></button></h3>

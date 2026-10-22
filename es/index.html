@@ -506,6 +506,8 @@ h2.section-title em{font-style:italic;font-weight:300}
 }
 .num-cell .num sup{font-size:.32em;font-weight:500;font-family:'Bricolage Grotesque',sans-serif;color:var(--muted-l);margin-top:.6em}
 .num-cell .num .unit{font-size:.32em;font-family:'JetBrains Mono',monospace;color:var(--muted-l);font-weight:500;margin-top:.85em}
+.num-cell .num.num-range{white-space:nowrap;font-size:clamp(44px,5.2vw,100px)}
+@media (max-width:880px){.num-cell .num.num-range{font-size:clamp(52px,9vw,100px)}}
 .num-cell .label{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted-l);letter-spacing:.08em;text-transform:uppercase;margin-top:22px;font-weight:600}
 .num-cell .desc{font-size:14px;color:var(--muted-l);margin-top:10px;line-height:1.45}
 .num-cell.accent{background:var(--lime)}
@@ -1082,7 +1084,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
           "name": "¿Con qué rapidez podemos empezar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El primer caso suele arrancar en las 24 horas siguientes a un encargo confirmado. La mayoría de las eliminaciones se confirman en Google entre el tercer y el séptimo día. La mediana de nuestros 1.427 casos es de cuatro días."
+            "text": "El primer caso suele arrancar en las 24 horas siguientes a un encargo confirmado. Las eliminaciones se confirman en Google en un plazo de 24 a 48 horas desde que se acepta el caso."
           }
         },
         {
@@ -1151,7 +1153,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         <div class="label">Registro en vivo · últimos 4 meses</div>
         <div class="stat-row"><span class="stat-key">Reseñas eliminadas</span><span class="stat-val">1.427</span></div>
         <div class="stat-row"><span class="stat-key">Tasa de éxito</span><span class="stat-val lime">100%</span></div>
-        <div class="stat-row"><span class="stat-key">Plazo mediano</span><span class="stat-val">4 días</span></div>
+        <div class="stat-row"><span class="stat-key">Plazo</span><span class="stat-val">24-48 horas</span></div>
         <div class="stat-row"><span class="stat-key">Reembolsos pendientes</span><span class="stat-val">0</span></div>
         <div class="stat-row"><span class="stat-key">Reseñas que reaparecieron</span><span class="stat-val">0</span></div>
       </aside>
@@ -1162,7 +1164,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
 <!-- TICKER -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span><span class="accent">●</span> Reseña de 1 estrella eliminada · automoción · 6 años · 3 días</span> <span><span class="accent">●</span> Difamación eliminada · medspa · 2 días</span> <span><span class="accent">●</span> Difamación de un ex empleado · despacho de abogados · 5 días</span> <span><span class="accent">●</span> Ataque de la competencia · restaurante · 4 días</span> <span><span class="accent">●</span> Reseña falsa · clínica dental · 3 días</span> <span><span class="accent">●</span> Paciente descontento · clínica · 6 días</span> <span><span class="accent">●</span> Reseña de 1 estrella eliminada · automoción · 6 años · 3 días</span> <span><span class="accent">●</span> Difamación eliminada · medspa · 2 días</span> <span><span class="accent">●</span> Difamación de un ex empleado · despacho de abogados · 5 días</span> <span><span class="accent">●</span> Ataque de la competencia · restaurante · 4 días</span> <span><span class="accent">●</span> Reseña falsa · clínica dental · 3 días</span> <span><span class="accent">●</span> Paciente descontento · clínica · 6 días</span>
+    <span><span class="accent">●</span> Reseña de 1 estrella eliminada · automoción · 6 años · 2 días</span> <span><span class="accent">●</span> Difamación eliminada · medspa · 1 día</span> <span><span class="accent">●</span> Difamación de un ex empleado · despacho de abogados · 2 días</span> <span><span class="accent">●</span> Ataque de la competencia · restaurante · 2 días</span> <span><span class="accent">●</span> Reseña falsa · clínica dental · 1 día</span> <span><span class="accent">●</span> Paciente descontento · clínica · 2 días</span> <span><span class="accent">●</span> Reseña de 1 estrella eliminada · automoción · 6 años · 2 días</span> <span><span class="accent">●</span> Difamación eliminada · medspa · 1 día</span> <span><span class="accent">●</span> Difamación de un ex empleado · despacho de abogados · 2 días</span> <span><span class="accent">●</span> Ataque de la competencia · restaurante · 2 días</span> <span><span class="accent">●</span> Reseña falsa · clínica dental · 1 día</span> <span><span class="accent">●</span> Paciente descontento · clínica · 2 días</span>
   </div>
 </div>
 
@@ -1216,11 +1218,11 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
           <h3>Una reseña le está perjudicando. Hacemos que <em>desaparezca.</em></h3>
           <p class="path-desc">Una sola reseña de una estrella puede bajar 0,3 una media de 4,9 y costarle a un negocio local miles al mes. Falsa, de un ex empleado, de la competencia. Envíenos el enlace.</p>
           <div class="urgency-banner">
-            <span class="pulse" aria-hidden="true"></span> <span><strong class="t-rust">¿Le está costando dinero ahora mismo?</strong> El plazo mediano es de 4 días desde que aceptamos el caso. Su reseña puede desaparecer antes del próximo fin de semana.</span>
+            <span class="pulse" aria-hidden="true"></span> <span><strong class="t-rust">¿Le está costando dinero ahora mismo?</strong> El plazo es de 24 a 48 horas desde que aceptamos el caso. Podemos hacer que su reseña desaparezca en dos días.</span>
           </div>
           <ul class="path-list">
             <li>Envíenos la URL. En 24 horas le decimos si es un sí o un no.</li>
-            <li>Pague solo después de que Google confirme la eliminación. Lo habitual: de 3 a 7 días.</li>
+            <li>Pague solo después de que Google confirme la eliminación. Lo habitual: 24-48 horas.</li>
             <li>Sin contratos, sin cuota mensual y sin trucos de «supresión SEO».</li>
             <li>Eliminación permanente. Garantía escrita de reeliminación de por vida.</li>
           </ul>
@@ -1279,7 +1281,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
 
       <div class="compare-cell good"><div class="label">Método</div><div class="v">Lizard Reviews</div></div>
       <div class="compare-cell good"><div class="label">Éxito</div><div class="v">100%</div></div>
-      <div class="compare-cell good"><div class="label">Plazo</div><div class="v">3-7 días</div></div>
+      <div class="compare-cell good"><div class="label">Plazo</div><div class="v">24-48 horas</div></div>
       <div class="compare-cell good"><div class="label">Coste</div><div class="v">Pago al eliminar</div></div>
     </div>
   </div>
@@ -1316,7 +1318,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="industry-row">
         <div class="ic" data-label="Proveedor"><div class="ic-head">Agencia boutique premium</div><div class="ic-sub">Dirigida por el fundador · posicionamiento «élite» · marca personal</div></div>
         <div class="ic" data-label="Éxito"><div class="ic-val">No divulgado</div><div class="ic-note">«Pague solo si hay éxito»</div></div>
-        <div class="ic" data-label="Plazo"><div class="ic-val">14-60 días</div></div>
+        <div class="ic" data-label="Plazo"><div class="ic-val">14-30 días</div></div>
         <div class="ic" data-label="Precios"><div class="ic-val">$500-1,500</div><div class="ic-note">Por reseña</div></div>
         <div class="ic" data-label="Trampa"><div class="ic-val">Cuello de botella de capacidad</div><div class="ic-note">Operadores individuales · colas largas · los casos rechazados no se avisan</div></div>
       </div>
@@ -1324,7 +1326,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="industry-row">
         <div class="ic" data-label="Proveedor"><div class="ic-head">Servicio directo de bajo coste</div><div class="ic-sub">Dominios optimizados para SEO · mucho gasto en Google Ads</div></div>
         <div class="ic" data-label="Éxito"><div class="ic-val">No divulgado</div><div class="ic-note">«Sin eliminación, sin coste»</div></div>
-        <div class="ic" data-label="Plazo"><div class="ic-val">«48 horas»*</div><div class="ic-note">En la práctica, a menudo de 2 a 6 semanas</div></div>
+        <div class="ic" data-label="Plazo"><div class="ic-val">4-30 días</div><div class="ic-note">Lo habitual en la práctica</div></div>
         <div class="ic" data-label="Precios"><div class="ic-val">$180-250</div><div class="ic-note">Por reseña</div></div>
         <div class="ic" data-label="Trampa"><div class="ic-val">Denuncia estándar</div><div class="ic-note">Modelo de volumen · solo casos fáciles · tasa de fallos silenciosa</div></div>
       </div>
@@ -1348,7 +1350,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="industry-row us">
         <div class="ic" data-label="Proveedor"><div class="ic-head">Lizard Reviews</div><div class="ic-sub">Nuestros propios métodos únicos · solo eliminación</div></div>
         <div class="ic" data-label="Éxito"><div class="ic-val">100%</div><div class="ic-note">En toda reseña con texto · 1.427 de 1.427</div></div>
-        <div class="ic" data-label="Plazo"><div class="ic-val">3-7 días</div><div class="ic-note">Mediana: 4 días</div></div>
+        <div class="ic" data-label="Plazo"><div class="ic-val">24-48 horas</div><div class="ic-note">Desde que aceptamos el caso</div></div>
         <div class="ic" data-label="Precios"><div class="ic-val">$450 / a medida</div><div class="ic-note">Tarifa fija directa · por tramos para agencias</div></div>
         <div class="ic" data-label="Trampa"><div class="ic-val">Solo sin texto</div><div class="ic-note">Las reseñas solo con estrellas (sin texto) son la única categoría que no podemos eliminar</div></div>
       </div>
@@ -1381,8 +1383,8 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         <div class="desc">Si aceptamos el caso, se elimina. Punto.</div>
       </div>
       <div class="num-cell">
-        <div class="num">3-7<span class="unit">días</span></div>
-        <div class="label">Plazo mediano</div>
+        <div class="num num-range">24-48<span class="unit">horas</span></div>
+        <div class="label">Plazo</div>
         <div class="desc">Desde la aceptación del caso hasta la eliminación confirmada en Google.</div>
       </div>
       <div class="num-cell">
@@ -1395,7 +1397,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
     <div class="numbers-callout fade-up">
       <div class="callout-tag">Qué significa «100%»</div>
       <p class="callout-text">
-        Nuestros propios métodos únicos se ocupan de toda reseña con texto. La única categoría fuera de nuestro alcance: las reseñas solo con valoración (una estrella sin texto). <strong>Envíenos el enlace. Si tiene texto, desaparece en 3-7 días. Si no cumplimos, no paga.</strong>
+        Nuestros propios métodos únicos se ocupan de toda reseña con texto. La única categoría fuera de nuestro alcance: las reseñas solo con valoración (una estrella sin texto). <strong>Envíenos el enlace. Si tiene texto, desaparece en 24-48 horas. Si no cumplimos, no paga.</strong>
       </p>
     </div>
   </div>
@@ -1424,8 +1426,8 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
       <div class="step">
         <div class="step-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg></div>
         <div class="step-num">PASO 03</div>
-        <h3>Eliminación en 3-7 días.</h3>
-        <p>Nuestros propios métodos únicos gestionan el caso entre bastidores. La mediana de plazo es de cuatro días. Recibe una confirmación en cuanto Google refleja el cambio.</p>
+        <h3>Eliminación en 24-48 horas.</h3>
+        <p>Nuestros propios métodos únicos gestionan el caso entre bastidores. Recibe una confirmación en cuanto Google refleja el cambio.</p>
       </div>
       <div class="step">
         <div class="step-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
@@ -1451,21 +1453,21 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         <div class="case-meta"><span>Automoción · 6 años de antigüedad</span><span class="badge">ELIMINADA</span></div>
         <div class="case-stars" aria-label="Una estrella">★ ☆ ☆ ☆ ☆</div>
         <p class="case-review">«Me vendieron un coche defectuoso. El gerente me colgó dos veces. Eviten este concesionario a toda costa.»</p>
-        <div class="case-result"><span class="out">Dos proveedores anteriores dijeron: <strong>imposible</strong></span><span class="days">3d</span></div>
+        <div class="case-result"><span class="out">Dos proveedores anteriores dijeron: <strong>imposible</strong></span><span class="days">2d</span></div>
       </article>
 
       <article class="case">
         <div class="case-meta"><span>Medspa · difamación</span><span class="badge">ELIMINADA</span></div>
         <div class="case-stars" aria-label="Una estrella">★ ☆ ☆ ☆ ☆</div>
         <p class="case-review">«Antihigiénico, poco profesional, este sitio es una estafa. Aléjense o se arrepentirán.»</p>
-        <div class="case-result"><span class="out">Éxito con la denuncia estándar: <strong>~5%</strong></span><span class="days">2d</span></div>
+        <div class="case-result"><span class="out">Éxito con la denuncia estándar: <strong>~5%</strong></span><span class="days">1d</span></div>
       </article>
 
       <article class="case">
         <div class="case-meta"><span>Despacho de abogados · ex empleado</span><span class="badge">ELIMINADA</span></div>
         <div class="case-stars" aria-label="Una estrella">★ ☆ ☆ ☆ ☆</div>
         <p class="case-review">«Dirección tóxica, el socio no es ético, no los contraten para ningún caso…»</p>
-        <div class="case-result"><span class="out">Presupuesto por vía legal: <strong>$3.200</strong></span><span class="days">5d</span></div>
+        <div class="case-result"><span class="out">Presupuesto por vía legal: <strong>$3.200</strong></span><span class="days">2d</span></div>
       </article>
     </div>
   </div>
@@ -1513,7 +1515,7 @@ h1.hero-title .strike::after{transform-origin:0 50%;transform:rotate(-2.5deg) sc
         </div>
         <div class="faq-item">
           <h3 class="faq-h"><button class="faq-q" id="faq-q8" aria-expanded="false" aria-controls="faq-a8">¿Con qué rapidez podemos empezar?<span class="plus" aria-hidden="true"></span></button></h3>
-          <div class="faq-a" id="faq-a8" role="region" aria-labelledby="faq-q8"><div class="faq-a-inner">El primer caso suele arrancar en las 24 horas siguientes a un encargo confirmado. La mayoría de las eliminaciones se confirman en Google entre el tercer y el séptimo día. La mediana de nuestros 1.427 casos es de cuatro días.</div></div>
+          <div class="faq-a" id="faq-a8" role="region" aria-labelledby="faq-q8"><div class="faq-a-inner">El primer caso suele arrancar en las 24 horas siguientes a un encargo confirmado. Las eliminaciones se confirman en Google en un plazo de 24 a 48 horas desde que se acepta el caso.</div></div>
         </div>
         <div class="faq-item">
           <h3 class="faq-h"><button class="faq-q" id="faq-q9" aria-expanded="false" aria-controls="faq-a9">¿Cómo se gestiona el pago?<span class="plus" aria-hidden="true"></span></button></h3>
