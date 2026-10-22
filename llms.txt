@@ -71,6 +71,7 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 
 ## Legal
 
+- [About Lizard Reviews](https://lizardreviews.com/about): Who is behind the service (reputation management, IT and legal specialists with 12+ years in the field), how we work, standards we hold, track record, company details.
 - [Terms and Conditions](https://lizardreviews.com/terms): Service description, case acceptance, pricing, pay-on-success terms, turnaround, guarantee scope, liability.
 - [Privacy Policy](https://lizardreviews.com/privacy): What data is collected via the inquiry form, legal basis, third-party processors (FormSubmit, Google Workspace, Vercel, Calendly), cookie-free analytics, GDPR rights.
 
