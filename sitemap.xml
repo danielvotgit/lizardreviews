@@ -1,219 +1,1083 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lizardreviews.com/</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog" />
   </url>
   <url>
     <loc>https://lizardreviews.com/terms</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/terminos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/terms" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/terminos</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/terminos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/terms" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/conditions</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/terminos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/terms" />
   </url>
   <url>
     <loc>https://lizardreviews.com/privacy</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/privacidad" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/privacy" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/privacidad</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/privacidad" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/privacy" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/confidentialite</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/privacidad" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/privacy" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/how-to-remove-fake-google-review-2026</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-to-remove-fake-google-review-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/como-eliminar-una-resena-falsa-de-google-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/comment-supprimer-un-faux-avis-google-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-to-remove-fake-google-review-2026" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/como-eliminar-una-resena-falsa-de-google-2026</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-to-remove-fake-google-review-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/como-eliminar-una-resena-falsa-de-google-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/comment-supprimer-un-faux-avis-google-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-to-remove-fake-google-review-2026" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/comment-supprimer-un-faux-avis-google-2026</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-to-remove-fake-google-review-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/como-eliminar-una-resena-falsa-de-google-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/comment-supprimer-un-faux-avis-google-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-to-remove-fake-google-review-2026" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/how-long-does-google-review-removal-take</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-long-does-google-review-removal-take" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/cuanto-tarda-eliminar-una-resena-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/combien-de-temps-pour-supprimer-un-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-long-does-google-review-removal-take" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/cuanto-tarda-eliminar-una-resena-de-google</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-long-does-google-review-removal-take" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/cuanto-tarda-eliminar-una-resena-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/combien-de-temps-pour-supprimer-un-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-long-does-google-review-removal-take" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/combien-de-temps-pour-supprimer-un-avis-google</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-long-does-google-review-removal-take" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/cuanto-tarda-eliminar-una-resena-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/combien-de-temps-pour-supprimer-un-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-long-does-google-review-removal-take" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/best-google-review-removal-service-2026</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/best-google-review-removal-service-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/mejor-servicio-eliminar-resenas-google-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/meilleur-service-suppression-avis-google-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/best-google-review-removal-service-2026" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/mejor-servicio-eliminar-resenas-google-2026</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/best-google-review-removal-service-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/mejor-servicio-eliminar-resenas-google-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/meilleur-service-suppression-avis-google-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/best-google-review-removal-service-2026" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/meilleur-service-suppression-avis-google-2026</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/best-google-review-removal-service-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/mejor-servicio-eliminar-resenas-google-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/meilleur-service-suppression-avis-google-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/best-google-review-removal-service-2026" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/why-google-review-removal-fails</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/why-google-review-removal-fails" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/por-que-fallan-los-servicios-de-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/pourquoi-les-services-de-suppression-davis-echouent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/why-google-review-removal-fails" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/por-que-fallan-los-servicios-de-eliminacion-de-resenas</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/why-google-review-removal-fails" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/por-que-fallan-los-servicios-de-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/pourquoi-les-services-de-suppression-davis-echouent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/why-google-review-removal-fails" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/pourquoi-les-services-de-suppression-davis-echouent</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/why-google-review-removal-fails" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/por-que-fallan-los-servicios-de-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/pourquoi-les-services-de-suppression-davis-echouent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/why-google-review-removal-fails" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/cost-of-negative-google-reviews</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/cost-of-negative-google-reviews" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/coste-de-una-resena-negativa-en-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cout-dun-avis-negatif-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/cost-of-negative-google-reviews" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/coste-de-una-resena-negativa-en-google</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/cost-of-negative-google-reviews" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/coste-de-una-resena-negativa-en-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cout-dun-avis-negatif-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/cost-of-negative-google-reviews" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cout-dun-avis-negatif-google</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/cost-of-negative-google-reviews" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/coste-de-una-resena-negativa-en-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cout-dun-avis-negatif-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/cost-of-negative-google-reviews" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/white-label-review-removal-for-agencies</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/white-label-review-removal-for-agencies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/eliminacion-de-resenas-marca-blanca-para-agencias" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/suppression-davis-marque-blanche-pour-agences" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/white-label-review-removal-for-agencies" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/eliminacion-de-resenas-marca-blanca-para-agencias</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/white-label-review-removal-for-agencies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/eliminacion-de-resenas-marca-blanca-para-agencias" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/suppression-davis-marque-blanche-pour-agences" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/white-label-review-removal-for-agencies" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/suppression-davis-marque-blanche-pour-agences</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/white-label-review-removal-for-agencies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/eliminacion-de-resenas-marca-blanca-para-agencias" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/suppression-davis-marque-blanche-pour-agences" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/white-label-review-removal-for-agencies" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/puedo-demandar-por-una-resena-falsa-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/peut-on-poursuivre-pour-un-faux-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/puedo-demandar-por-una-resena-falsa-de-google</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/puedo-demandar-por-una-resena-falsa-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/peut-on-poursuivre-pour-un-faux-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/peut-on-poursuivre-pour-un-faux-avis-google</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/puedo-demandar-por-una-resena-falsa-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/peut-on-poursuivre-pour-un-faux-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/can-i-sue-for-a-fake-google-review" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/google-review-extortion-what-to-do</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-extortion-what-to-do" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/extorsion-con-resenas-de-google-que-hacer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/extorsion-avis-google-que-faire" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-extortion-what-to-do" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/extorsion-con-resenas-de-google-que-hacer</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-extortion-what-to-do" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/extorsion-con-resenas-de-google-que-hacer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/extorsion-avis-google-que-faire" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-extortion-what-to-do" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/extorsion-avis-google-que-faire</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-extortion-what-to-do" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/extorsion-con-resenas-de-google-que-hacer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/extorsion-avis-google-que-faire" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-extortion-what-to-do" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/como-saber-quien-dejo-una-resena-en-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/comment-savoir-qui-a-laisse-un-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/como-saber-quien-dejo-una-resena-en-google</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/como-saber-quien-dejo-una-resena-en-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/comment-savoir-qui-a-laisse-un-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/comment-savoir-qui-a-laisse-un-avis-google</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/como-saber-quien-dejo-una-resena-en-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/comment-savoir-qui-a-laisse-un-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/how-to-find-out-who-left-a-google-review" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-dental-practice-review-removal</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-dental-practice-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-clinica-dental-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-dentaire-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-dental-practice-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-clinica-dental-eliminar-resenas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-dental-practice-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-clinica-dental-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-dentaire-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-dental-practice-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-cabinet-dentaire-suppression-avis</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-dental-practice-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-clinica-dental-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-dentaire-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-dental-practice-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-law-firm-review-removal</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-law-firm-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-despacho-de-abogados-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-davocats-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-law-firm-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-despacho-de-abogados-eliminar-resenas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-law-firm-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-despacho-de-abogados-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-davocats-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-law-firm-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-cabinet-davocats-suppression-avis</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-law-firm-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-despacho-de-abogados-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-davocats-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-law-firm-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-construction-company-review-removal</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-construction-company-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-constructora-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-entreprise-de-construction-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-construction-company-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-constructora-eliminar-resenas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-construction-company-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-constructora-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-entreprise-de-construction-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-construction-company-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-entreprise-de-construction-suppression-avis</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-construction-company-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-constructora-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-entreprise-de-construction-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-construction-company-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-restaurant-review-removal</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-restaurant-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-restaurant-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-restaurant-suppression-avis</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-restaurant-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-ecommerce-brand-review-removal</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-ecommerce-brand-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-marca-ecommerce-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-marque-ecommerce-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-ecommerce-brand-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-marca-ecommerce-eliminar-resenas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-ecommerce-brand-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-marca-ecommerce-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-marque-ecommerce-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-ecommerce-brand-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-marque-ecommerce-suppression-avis</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-ecommerce-brand-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-marca-ecommerce-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-marque-ecommerce-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-ecommerce-brand-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-financial-advisor-review-removal</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-financial-advisor-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-asesor-financiero-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-conseiller-financier-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-financial-advisor-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-asesor-financiero-eliminar-resenas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-financial-advisor-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-asesor-financiero-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-conseiller-financier-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-financial-advisor-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-conseiller-financier-suppression-avis</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-financial-advisor-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-asesor-financiero-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-conseiller-financier-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-financial-advisor-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-agente-inmobiliario-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-agent-immobilier-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-agente-inmobiliario-eliminar-resenas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-agente-inmobiliario-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-agent-immobilier-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-agent-immobilier-suppression-avis</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-agente-inmobiliario-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-agent-immobilier-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-real-estate-agent-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-doctor-practice-review-removal</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-doctor-practice-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-consulta-medica-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-medical-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-doctor-practice-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-consulta-medica-eliminar-resenas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-doctor-practice-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-consulta-medica-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-medical-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-doctor-practice-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-cabinet-medical-suppression-avis</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-doctor-practice-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-consulta-medica-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-cabinet-medical-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-doctor-practice-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-medspa-review-removal</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-medspa-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-spa-medico-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-spa-medical-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-medspa-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-spa-medico-eliminar-resenas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-medspa-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-spa-medico-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-spa-medical-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-medspa-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-spa-medical-suppression-avis</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-medspa-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-spa-medico-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-spa-medical-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-medspa-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-medical-clinic-review-removal</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-medical-clinic-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-clinica-medica-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-clinique-medicale-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-medical-clinic-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-clinica-medica-eliminar-resenas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-medical-clinic-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-clinica-medica-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-clinique-medicale-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-medical-clinic-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-clinique-medicale-suppression-avis</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-medical-clinic-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-clinica-medica-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-clinique-medicale-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-medical-clinic-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-auto-parts-store-review-removal</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-auto-parts-store-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-tienda-de-autopartes-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-magasin-pieces-auto-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-auto-parts-store-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-tienda-de-autopartes-eliminar-resenas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-auto-parts-store-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-tienda-de-autopartes-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-magasin-pieces-auto-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-auto-parts-store-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-magasin-pieces-auto-suppression-avis</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-auto-parts-store-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-tienda-de-autopartes-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-magasin-pieces-auto-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-auto-parts-store-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-auto-repair-shop-review-removal</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-auto-repair-shop-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-taller-mecanico-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-garage-automobile-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-auto-repair-shop-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-taller-mecanico-eliminar-resenas</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-auto-repair-shop-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-taller-mecanico-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-garage-automobile-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-auto-repair-shop-review-removal" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-garage-automobile-suppression-avis</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-auto-repair-shop-review-removal" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-taller-mecanico-eliminar-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-garage-automobile-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-auto-repair-shop-review-removal" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/case-study-agency-white-label-reseller</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-agency-white-label-reseller" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-agencia-reventa-marca-blanca" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-agence-revendeur-marque-blanche" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-agency-white-label-reseller" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/caso-agencia-reventa-marca-blanca</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-agency-white-label-reseller" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-agencia-reventa-marca-blanca" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-agence-revendeur-marque-blanche" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-agency-white-label-reseller" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/cas-agence-revendeur-marque-blanche</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-agency-white-label-reseller" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-agencia-reventa-marca-blanca" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-agence-revendeur-marque-blanche" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-agency-white-label-reseller" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/cost-of-google-review-removal-service</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/cost-of-google-review-removal-service" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/cuanto-cuesta-eliminar-una-resena-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/combien-coute-la-suppression-dun-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/cost-of-google-review-removal-service" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/cuanto-cuesta-eliminar-una-resena-de-google</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/cost-of-google-review-removal-service" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/cuanto-cuesta-eliminar-una-resena-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/combien-coute-la-suppression-dun-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/cost-of-google-review-removal-service" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/combien-coute-la-suppression-dun-avis-google</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/cost-of-google-review-removal-service" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/cuanto-cuesta-eliminar-una-resena-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/combien-coute-la-suppression-dun-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/cost-of-google-review-removal-service" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/google-review-removal-request-denied</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-removal-request-denied" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/google-rechazo-mi-solicitud-eliminar-resena" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/google-a-refuse-ma-demande-de-suppression-davis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-removal-request-denied" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/google-rechazo-mi-solicitud-eliminar-resena</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-removal-request-denied" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/google-rechazo-mi-solicitud-eliminar-resena" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/google-a-refuse-ma-demande-de-suppression-davis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-removal-request-denied" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/google-a-refuse-ma-demande-de-suppression-davis</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-removal-request-denied" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/google-rechazo-mi-solicitud-eliminar-resena" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/google-a-refuse-ma-demande-de-suppression-davis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-removal-request-denied" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/can-you-turn-off-google-reviews</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/can-you-turn-off-google-reviews" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/se-pueden-desactivar-las-resenas-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/peut-on-desactiver-les-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/can-you-turn-off-google-reviews" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/se-pueden-desactivar-las-resenas-de-google</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/can-you-turn-off-google-reviews" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/se-pueden-desactivar-las-resenas-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/peut-on-desactiver-les-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/can-you-turn-off-google-reviews" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/peut-on-desactiver-les-avis-google</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/can-you-turn-off-google-reviews" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/se-pueden-desactivar-las-resenas-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/peut-on-desactiver-les-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/can-you-turn-off-google-reviews" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/google-review-bombing-what-to-do</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-bombing-what-to-do" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/ataque-de-resenas-falsas-en-google-que-hacer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/attaque-davis-google-que-faire" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-bombing-what-to-do" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/ataque-de-resenas-falsas-en-google-que-hacer</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-bombing-what-to-do" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/ataque-de-resenas-falsas-en-google-que-hacer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/attaque-davis-google-que-faire" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-bombing-what-to-do" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/attaque-davis-google-que-faire</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-review-bombing-what-to-do" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/ataque-de-resenas-falsas-en-google-que-hacer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/attaque-davis-google-que-faire" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-review-bombing-what-to-do" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/review-removal-referral-partner-program</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/review-removal-referral-partner-program" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/programa-de-referidos-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/programme-de-parrainage-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/review-removal-referral-partner-program" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/programa-de-referidos-eliminacion-de-resenas</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/review-removal-referral-partner-program" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/programa-de-referidos-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/programme-de-parrainage-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/review-removal-referral-partner-program" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/programme-de-parrainage-suppression-avis</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/review-removal-referral-partner-program" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/programa-de-referidos-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/programme-de-parrainage-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/review-removal-referral-partner-program" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/review-removal-vendor-due-diligence</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/review-removal-vendor-due-diligence" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/evaluacion-de-proveedores-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/evaluation-des-prestataires-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/review-removal-vendor-due-diligence" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/evaluacion-de-proveedores-eliminacion-de-resenas</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/review-removal-vendor-due-diligence" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/evaluacion-de-proveedores-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/evaluation-des-prestataires-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/review-removal-vendor-due-diligence" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/evaluation-des-prestataires-suppression-avis</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/review-removal-vendor-due-diligence" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/evaluacion-de-proveedores-eliminacion-de-resenas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/evaluation-des-prestataires-suppression-avis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/review-removal-vendor-due-diligence" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/should-you-wait-to-remove-a-bad-google-review</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/should-you-wait-to-remove-a-bad-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/debo-esperar-para-eliminar-una-resena-mala-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/faut-il-attendre-pour-supprimer-un-mauvais-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/should-you-wait-to-remove-a-bad-google-review" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/debo-esperar-para-eliminar-una-resena-mala-de-google</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/should-you-wait-to-remove-a-bad-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/debo-esperar-para-eliminar-una-resena-mala-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/faut-il-attendre-pour-supprimer-un-mauvais-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/should-you-wait-to-remove-a-bad-google-review" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/faut-il-attendre-pour-supprimer-un-mauvais-avis-google</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/should-you-wait-to-remove-a-bad-google-review" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/debo-esperar-para-eliminar-una-resena-mala-de-google" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/faut-il-attendre-pour-supprimer-un-mauvais-avis-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/should-you-wait-to-remove-a-bad-google-review" />
   </url>
   <url>
     <loc>https://lizardreviews.com/blog/google-deleted-292-million-reviews-2026-impact</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-deleted-292-million-reviews-2026-impact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/google-elimino-292-millones-de-resenas-impacto-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/google-a-supprime-292-millions-davis-impact-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-deleted-292-million-reviews-2026-impact" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/blog/google-elimino-292-millones-de-resenas-impacto-2026</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-deleted-292-million-reviews-2026-impact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/google-elimino-292-millones-de-resenas-impacto-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/google-a-supprime-292-millions-davis-impact-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-deleted-292-million-reviews-2026-impact" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/blog/google-a-supprime-292-millions-davis-impact-2026</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/google-deleted-292-million-reviews-2026-impact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/google-elimino-292-millones-de-resenas-impacto-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/google-a-supprime-292-millions-davis-impact-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/google-deleted-292-million-reviews-2026-impact" />
   </url>
   <url>
     <loc>https://lizardreviews.com/referral-program</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/referral-program" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/programa-de-referidos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/programme-de-parrainage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/referral-program" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/programa-de-referidos</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/referral-program" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/programa-de-referidos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/programme-de-parrainage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/referral-program" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/programme-de-parrainage</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/referral-program" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/programa-de-referidos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/programme-de-parrainage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/referral-program" />
   </url>
   <url>
     <loc>https://lizardreviews.com/referral-terms</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/referral-terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/terminos-de-referidos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/conditions-parrainage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/referral-terms" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/es/terminos-de-referidos</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/referral-terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/terminos-de-referidos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/conditions-parrainage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/referral-terms" />
+  </url>
+  <url>
+    <loc>https://lizardreviews.com/fr/conditions-parrainage</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lizardreviews.com/referral-terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/terminos-de-referidos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/conditions-parrainage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/referral-terms" />
   </url>
 </urlset>

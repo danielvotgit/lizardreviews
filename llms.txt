@@ -79,7 +79,15 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 - Email: petr@lizardreviews.com
 - Book a call: https://calendly.com/petr-lizardreviews
 - Geographic coverage: US, CA, UK, EU
-- Languages: English
+- Languages: English, Spanish (Español), French (Français)
+
+## Languages
+
+The whole site is also available in Spanish and French, translated from the English source. English remains the reference version; in the legal pages the English text prevails. Prices stay in US dollars.
+
+- Spanish: [Inicio](https://lizardreviews.com/es), [Blog](https://lizardreviews.com/es/blog), [Programa de referidos](https://lizardreviews.com/es/programa-de-referidos), [Términos](https://lizardreviews.com/es/terminos), [Privacidad](https://lizardreviews.com/es/privacidad)
+- French: [Accueil](https://lizardreviews.com/fr), [Blog](https://lizardreviews.com/fr/blog), [Programme de parrainage](https://lizardreviews.com/fr/programme-de-parrainage), [Conditions](https://lizardreviews.com/fr/conditions), [Confidentialité](https://lizardreviews.com/fr/confidentialite)
+- Every translated page links to its English original through hreflang alternates.
 
 ## Methodology disclosure
 

@@ -12,10 +12,12 @@ document.querySelectorAll('.nav').forEach(nav => {
   const btn = nav.querySelector('.nav-toggle');
   const panel = nav.querySelector('.nav-links');
   if (!btn || !panel) return;
+  const openLabel = btn.getAttribute('aria-label') || 'Open menu';
+  const closeLabel = btn.dataset.close || 'Close menu';
   const setOpen = on => {
     nav.classList.toggle('open', on);
     btn.setAttribute('aria-expanded', on ? 'true' : 'false');
-    btn.setAttribute('aria-label', on ? 'Close menu' : 'Open menu');
+    btn.setAttribute('aria-label', on ? closeLabel : openLabel);
   };
   btn.addEventListener('click', e => { e.stopPropagation(); setOpen(!nav.classList.contains('open')); });
   panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
@@ -24,7 +26,7 @@ document.querySelectorAll('.nav').forEach(nav => {
     if (e.key === 'Escape' && nav.classList.contains('open')) { setOpen(false); btn.focus(); }
   });
   // Leaving the mobile breakpoint must not strand the panel in an open state.
-  matchMedia('(min-width:981px)').addEventListener('change', e => { if (e.matches) setOpen(false); });
+  matchMedia('(min-width:1201px)').addEventListener('change', e => { if (e.matches) setOpen(false); });
 });
 
 // One submit per visitor on plain forms, with visible feedback while the request is in flight.

@@ -6,10 +6,17 @@
 <title>Lizard Reviews Blog, Google Review Removal, Reputation &amp; ORM Insights</title>
 <meta name="description" content="In-depth guides on Google review removal, reputation management, and the ORM industry. Written by practitioners with 1,400+ removals delivered." />
 <link rel="canonical" href="https://lizardreviews.com/blog" />
+<link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog" />
+<link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog" />
+<link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog" />
+<link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog" />
 <meta property="og:title" content="Lizard Reviews Blog, Honest writing on review removal" />
 <meta property="og:description" content="Guides, comparisons, and data from a team that has removed 1,400+ Google reviews with a 100% delivery rate." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://lizardreviews.com/blog" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
 <meta property="og:image" content="https://lizardreviews.com/og.png?v=3" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -47,7 +54,7 @@ button{font-family:inherit;font-size:inherit}
 @media (max-width:720px){.container{padding:0 22px}}
 @media (max-width:420px){.container{padding:0 18px}}
 .nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bone) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule-l)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:16px}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px;gap:16px}
 .brand{display:flex;align-items:center;gap:14px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:24px;letter-spacing:-.025em}
 .brand-mark{width:42px;height:42px;border-radius:9px;background:var(--ink);display:grid;place-items:center;flex:0 0 42px}
 .brand-mark svg{width:32px;height:auto}
@@ -131,7 +138,7 @@ button{font-family:inherit;font-size:inherit}
 .fade-up.in{opacity:1;transform:none}
 @media (max-width:480px){
 .container{padding:0 18px}
-.nav-inner{padding:13px 0;gap:12px}
+.nav-inner{padding-top:13px;padding-bottom:13px;gap:12px}
 .brand{font-size:17px;gap:9px;letter-spacing:-.02em}
 .brand-mark{width:32px;height:32px;flex:0 0 32px;border-radius:7px}
 .brand-mark svg{width:23px}
@@ -173,6 +180,9 @@ button{font-family:inherit;font-size:inherit}
 }
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}.fade-up{opacity:1;transform:none}}
 .skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--ink);color:var(--bone);padding:10px 16px;border-radius:8px;font-size:14px;transition:top .2s}.skip:focus{top:12px}
+@media (max-width:420px){.brand{white-space:nowrap;font-size:16px;gap:8px}.brand-mark{width:32px;height:32px;flex:0 0 32px}.brand-mark svg{width:23px}.nav-cta{padding:0 12px;font-size:12px;min-height:44px;white-space:nowrap}.nav-cta::after{display:none}.nav-inner{gap:8px}.nav-toggle{flex:0 0 44px}}
+@media (max-width:380px){.brand{font-size:15px;gap:7px}.nav-cta{padding:0 10px}}
+@media (max-width:340px){.brand{font-size:14px;gap:6px}.brand-mark{width:28px;height:28px;flex:0 0 28px}.brand-mark svg{width:20px}.nav-cta{padding:0 8px;font-size:11px}.nav-inner{gap:6px}}
 </style>
 
 <script type="application/ld+json">
@@ -248,9 +258,10 @@ button{font-family:inherit;font-size:inherit}
       <a href="/#industry">Compare</a>
       <a href="/blog" class="active">Blog</a>
       <a href="/#faq">FAQ</a>
+    <span class="lang" translate="no" role="group" aria-label="Language"><a href="/blog" hreflang="en" lang="en" aria-current="true">EN</a><a href="/es/blog" hreflang="es" lang="es">ES</a><a href="/fr/blog" hreflang="fr" lang="fr">FR</a></span>
     </div>
     <a href="/#cta" class="nav-cta">Book a call</a>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span class="bars"></span></button>
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-close="Close menu" aria-expanded="false" aria-controls="nav-links"><span class="bars"></span></button>
   </div>
 </nav>
 
@@ -534,6 +545,6 @@ document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 <script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments)};</script>
 <script defer src="https://va.vercel-scripts.com/v1/speed-insights/script.js"></script>
 <script defer src="/clarity.js"></script>
-<script defer src="blog.js?v=3"></script>
+<script defer src="blog.js?v=5"></script>
 </body>
 </html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Caso práctico: eliminación de 10 reseñas falsas tras un ataque de bombardeo de reseñas a un restaurante | Lizard Reviews</title>
+<meta name="description" content="Un restaurante familiar estadounidense perdió una cuarta parte de sus reservas de fin de semana después de que un ataque de bombardeo de reseñas hundiera su valoración de 4,7 a 3,9 en menos de 48 horas. Así se identificaron y eliminaron las reseñas falsas." />
+<link rel="canonical" href="https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas" />
+<link rel="alternate" hreflang="en" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+<link rel="alternate" hreflang="es" href="https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas" />
+<link rel="alternate" hreflang="fr" href="https://lizardreviews.com/fr/blog/cas-restaurant-suppression-avis" />
+<link rel="alternate" hreflang="x-default" href="https://lizardreviews.com/blog/case-study-restaurant-review-removal" />
+<meta property="og:title" content="Caso práctico: un ataque de bombardeo de reseñas a un restaurante y cómo cayeron las reseñas falsas" />
+<meta property="og:description" content="De 8 a 12 reseñas falsas de una estrella en dos días. Una caída del 25% en reservas de fin de semana. Luego, eliminación en bloque en una semana aproximadamente. Un caso práctico compuesto sobre bombardeo de reseñas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:image" content="https://lizardreviews.com/og.png?v=3" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Lizard Reviews: eliminación garantizada de reseñas de Google, pago por resultados" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Caso práctico: un ataque de bombardeo de reseñas a un restaurante y cómo cayeron las reseñas falsas" />
+<meta name="twitter:description" content="De 8 a 12 reseñas falsas de una estrella en dos días. Una caída del 25% en reservas de fin de semana. Luego, eliminación en bloque en una semana aproximadamente. Un caso práctico compuesto sobre bombardeo de reseñas." />
+<meta name="twitter:image" content="https://lizardreviews.com/og.png?v=3" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<meta name="theme-color" content="#0A0A09" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta name="article:published_time" content="2026-05-10" />
+<meta name="article:modified_time" content="2026-05-10" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&amp;family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0A09'/%3E%3Csvg x='8' y='8' width='48' height='48' viewBox='15 16 34 34'%3E%3Cpath fill='none' d='M19.57,42.77c1.81.32,3.66,1.39,5.49,1.86a31.63,31.63,0,0,0,5.85.93,31.19,31.19,0,0,0,12-1.55c.08.88-.76,1.54-1.52,2a19.14,19.14,0,0,1-18.44-.1C21.76,45.21,19.93,44.11,19.57,42.77Z'/%3E%3Cpath fill='none' d='M17.78,18a10.57,10.57,0,0,1,7.75,4.42c3.06,4.3-2.86,3.52-2.86,3.52S16.22,20,17.78,18Z'/%3E%3Ccircle fill='%23B8FF2E' cx='24.03' cy='20.55' r='1'/%3E%3Ccircle fill='%23B8FF2E' cx='38.03' cy='47' r='1'/%3E%3Cpath fill='none' d='M34.3,31.08c-1.83-2.95-7,4.11-7.47,5.4a2,2,0,0,0-.18,1.1c.13.68.82,1.07,1.46,1.33a13.38,13.38,0,0,0,7,.8,1.42,1.42,0,0,0,.63-.21,1.35,1.35,0,0,0,.34-1.31c-.27-1.84-1.42-3.48-1.53-5.34a4.48,4.48,0,0,0-.2-1.58A1.53,1.53,0,0,0,34.3,31.08Z'/%3E%3Cpath fill='none' d='M27.48,23.33S21,23.42,21.59,27s8.87,8.56,7.83,0Z'/%3E%3Cpath fill='none' d='M36.75,31.13a4.86,4.86,0,0,0,.69,3c1.26,2,5.37,2.9,5.42,5.46a3.26,3.26,0,0,1-1.24,2.32A8.56,8.56,0,0,1,37.31,44c.32-.74,1.11-1.13,1.73-1.65s1.08-1.48.56-2.1A1.56,1.56,0,0,0,38,40a6.74,6.74,0,0,1-1.64.37c-.56,0-1.18-.42-1.15-1s.46-.78.66-1.19a2.26,2.26,0,0,0-.5-2.22,4.66,4.66,0,0,1-1.14-2.07A2.3,2.3,0,0,1,35,32,3.17,3.17,0,0,1,36.75,31.13Z'/%3E%3Cpath fill='none' stroke='%23B8FF2E' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.2' d='M17.18,40.26a14.56,14.56,0,0,0,23.73-.42H35.24a.7.7,0,0,1-.4-1.27L37,37.09l-2.06-1.86a2.5,2.5,0,0,1-.13-3.58,2.5,2.5,0,0,1,3.54-.07l2.61,2.51'/%3E%3Cpath fill='none' stroke='%23B8FF2E' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.2' d='M40.93,46.08A9.88,9.88,0,0,0,47,37a9.75,9.75,0,0,0-1.2-4.71.43.43,0,0,0,0-.09c-.11-.2-.23-.39-.35-.58a9.83,9.83,0,0,0-2.3-2.47l-.46-.34-.09-.06-.31-.2'/%3E%3Cpolyline fill='none' stroke='%23B8FF2E' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.2' points='31.35 33.17 28.18 38.17 23.6 38.17'/%3E%3Cpath fill='none' stroke='%23B8FF2E' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.2' d='M26.25,35l1.6-2.63h0A6.33,6.33,0,0,1,21.52,26h0V24.5l-4.11-4.32a1.39,1.39,0,0,1-.26-1.52h0a1.39,1.39,0,0,1,1.26-.82h5.06a14.23,14.23,0,0,1,4.93.88l.34.13a7.39,7.39,0,0,1,4,3.54h0a7.39,7.39,0,0,0,3.53,3.34l4.61,2.08a10.65,10.65,0,0,1,4.93,4.53h0'/%3E%3Cpath fill='none' stroke='%23B8FF2E' stroke-linecap='round' stroke-linejoin='round' stroke-width='3.2' d='M26.64,23.83a2.11,2.11,0,1,1,0,4.22'/%3E%3C/svg%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="manifest" href="/site.webmanifest?v=3">
+<link rel="stylesheet" href="/blog/blog.css?v=8">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas#article",
+      "headline": "Caso práctico: eliminación de 10 reseñas falsas tras un ataque de bombardeo de reseñas a un restaurante",
+      "description": "Un restaurante familiar perdió una cuarta parte de sus reservas de fin de semana después de que un ataque de bombardeo de reseñas hundiera su valoración de 4,7 a 3,9 en menos de 48 horas. Un caso práctico compuesto sobre cómo se identificaron y eliminaron las reseñas falsas.",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "author": {
+        "@type": "Person",
+        "name": "Petr Lobuda",
+        "jobTitle": "Director de Crecimiento, Lizard Reviews",
+        "url": "https://lizardreviews.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lizard Reviews",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lizardreviews.com/logo.png?v=3"
+        }
+      },
+      "image": "https://lizardreviews.com/og.png?v=3",
+      "mainEntityOfPage": "https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas",
+      "wordCount": 1266,
+      "articleSection": "Caso práctico",
+      "inLanguage": "es",
+      "contentLocation": {
+        "@type": "Country",
+        "name": "United States"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es un ataque de reseñas falsas en Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una ráfaga coordinada de reseñas negativas, normalmente de una estrella y vagas, publicadas en una ventana corta por cuentas con poco o ningún otro historial de reseñas. Se diferencia de una mala reseña ordinaria porque es repentina, agrupada en el tiempo y dirigida a mover rápido la valoración media en lugar de reflejar la experiencia real de un cliente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué perjudica más el bombardeo de reseñas a los negocios pequeños?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un negocio con unas pocas decenas de reseñas no tiene colchón. Diez reseñas falsas de una estrella pueden bajar la media casi un punto en menos de 48 horas, y esa caída se ve de inmediato en el paquete local de Google. Un negocio con cientos o miles de reseñas absorbe el mismo ataque con una abolladura apenas visible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Funciona la denuncia individual contra el bombardeo de reseñas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A veces, pero es lenta e irregular. La denuncia es un proceso de una reseña cada vez, y el sistema automático de Google a menudo devuelve «no se ha encontrado ninguna infracción» incluso en reseñas que parecen falsas, porque una única reseña negativa vaga no siempre activa por sí sola una comprobación automática de políticas. Enviar el lote entero junto, con el patrón expuesto, suele avanzar más rápido."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://lizardreviews.com/es"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://lizardreviews.com/es/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Caso práctico: bombardeo de reseñas a un restaurante",
+          "item": "https://lizardreviews.com/es/blog/caso-restaurante-eliminar-resenas"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="speculationrules">
+{"prefetch":[{"where":{"href_matches":"/es/blog/*"},"eagerness":"moderate"},{"where":{"href_matches":"/es"},"eagerness":"moderate"}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<nav class="nav" aria-label="Principal">
+  <div class="container nav-inner">
+    <a href="/es" class="brand">
+      <span class="brand-mark"><svg viewBox="15 16 34 34" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"><path fill="none" d="M19.57,42.77c1.81.32,3.66,1.39,5.49,1.86a31.63,31.63,0,0,0,5.85.93,31.19,31.19,0,0,0,12-1.55c.08.88-.76,1.54-1.52,2a19.14,19.14,0,0,1-18.44-.1C21.76,45.21,19.93,44.11,19.57,42.77Z"/><path fill="none" d="M17.78,18a10.57,10.57,0,0,1,7.75,4.42c3.06,4.3-2.86,3.52-2.86,3.52S16.22,20,17.78,18Z"/><circle fill="#B8FF2E" cx="24.03" cy="20.55" r="1"/><circle fill="#B8FF2E" cx="38.03" cy="47" r="1"/><path fill="none" d="M34.3,31.08c-1.83-2.95-7,4.11-7.47,5.4a2,2,0,0,0-.18,1.1c.13.68.82,1.07,1.46,1.33a13.38,13.38,0,0,0,7,.8,1.42,1.42,0,0,0,.63-.21,1.35,1.35,0,0,0,.34-1.31c-.27-1.84-1.42-3.48-1.53-5.34a4.48,4.48,0,0,0-.2-1.58A1.53,1.53,0,0,0,34.3,31.08Z"/><path fill="none" d="M27.48,23.33S21,23.42,21.59,27s8.87,8.56,7.83,0Z"/><path fill="none" d="M36.75,31.13a4.86,4.86,0,0,0,.69,3c1.26,2,5.37,2.9,5.42,5.46a3.26,3.26,0,0,1-1.24,2.32A8.56,8.56,0,0,1,37.31,44c.32-.74,1.11-1.13,1.73-1.65s1.08-1.48.56-2.1A1.56,1.56,0,0,0,38,40a6.74,6.74,0,0,1-1.64.37c-.56,0-1.18-.42-1.15-1s.46-.78.66-1.19a2.26,2.26,0,0,0-.5-2.22,4.66,4.66,0,0,1-1.14-2.07A2.3,2.3,0,0,1,35,32,3.17,3.17,0,0,1,36.75,31.13Z"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.18,40.26a14.56,14.56,0,0,0,23.73-.42H35.24a.7.7,0,0,1-.4-1.27L37,37.09l-2.06-1.86a2.5,2.5,0,0,1-.13-3.58,2.5,2.5,0,0,1,3.54-.07l2.61,2.51"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M40.93,46.08A9.88,9.88,0,0,0,47,37a9.75,9.75,0,0,0-1.2-4.71.43.43,0,0,0,0-.09c-.11-.2-.23-.39-.35-.58a9.83,9.83,0,0,0-2.3-2.47l-.46-.34-.09-.06-.31-.2"/><polyline fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="31.35 33.17 28.18 38.17 23.6 38.17"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.25,35l1.6-2.63h0A6.33,6.33,0,0,1,21.52,26h0V24.5l-4.11-4.32a1.39,1.39,0,0,1-.26-1.52h0a1.39,1.39,0,0,1,1.26-.82h5.06a14.23,14.23,0,0,1,4.93.88l.34.13a7.39,7.39,0,0,1,4,3.54h0a7.39,7.39,0,0,0,3.53,3.34l4.61,2.08a10.65,10.65,0,0,1,4.93,4.53h0"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.64,23.83a2.11,2.11,0,1,1,0,4.22"/></svg></span>
+      <span>Lizard Reviews</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="/es#how">Cómo funciona</a>
+      <a href="/es#numbers">Resultados</a>
+      <a href="/es#paths">Para agencias</a>
+      <a href="/es#industry">Comparar</a>
+      <a href="/es/blog" class="active">Blog</a>
+      <a href="/es#faq">Preguntas</a>
+    <span class="lang" translate="no" role="group" aria-label="Idioma"><a href="/blog/case-study-restaurant-review-removal" hreflang="en" lang="en">EN</a><a href="/es/blog/caso-restaurante-eliminar-resenas" hreflang="es" lang="es" aria-current="true">ES</a><a href="/fr/blog/cas-restaurant-suppression-avis" hreflang="fr" lang="fr">FR</a></span>
+    </div>
+    <a href="/es#cta" class="nav-cta">Agendar llamada</a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" data-close="Cerrar menú" aria-expanded="false" aria-controls="nav-links"><span class="bars"></span></button>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="article-head">
+  <div class="container narrow">
+    <div class="crumbs"><a href="/es">Inicio</a><span class="sep">/</span><a href="/es/blog">Blog</a><span class="sep">/</span><span>Caso práctico: bombardeo de reseñas</span></div>
+    <span class="article-cat">Caso práctico · Hostelería</span>
+    <h1 class="article-title">Un fin de semana, diez reseñas falsas y una valoración que cayó de 4,7 a 3,9</h1>
+    <p class="article-dek">Un restaurante familiar sufrió un patrón clásico de bombardeo de reseñas: una ráfaga de reseñas de una estrella de cuentas recién creadas, todas en menos de 48 horas. Así fue el ataque, lo que costó en reservas y cómo cayeron las reseñas falsas.</p>
+    <div class="article-meta">
+      <div class="author"><span class="avatar">P</span><span class="author-name">Petr Lobuda</span><span>Director de Crecimiento, Lizard Reviews</span></div>
+      <span class="pipe">·</span><span>10 de mayo de 2026</span><span class="pipe">·</span><span>4 min de lectura</span>
+    </div>
+  </div>
+</header>
+
+<div class="container narrow">
+
+  <div class="tldr">
+    <span class="label">RESUMEN DEL CASO</span>
+    <h2>Una oleada coordinada de reseñas falsas de una estrella recortó 0,8 puntos la valoración de un restaurante en dos días. La denuncia individual eliminó 2 de 10. La eliminación profesional en bloque quitó el resto en una semana aproximadamente.</h2>
+    <ul>
+      <li><strong>El ataque:</strong> entre 8 y 12 reseñas de una estrella publicadas en 24-48 horas, todas vagas, todas de cuentas recién creadas sin ningún otro historial de reseñas.</li>
+      <li><strong>El daño:</strong> la valoración cayó de 4,7 a 3,9. Las solicitudes de reserva de fin de semana bajaron un 25% estimado la semana siguiente.</li>
+      <li><strong>El intento por cuenta propia:</strong> el propietario denunció cada reseña una por una a través de Google. Solo 2 de unas 10 cayeron tras varias semanas, el resto marcadas como «no se ha encontrado ninguna infracción».</li>
+      <li><strong>La solución:</strong> todos los enlaces de reseñas enviados a la vez a Lizard Reviews. Casos aceptados en un día, todos confirmados eliminados en una semana aproximadamente, valoración recuperada.</li>
+    </ul>
+  </div>
+
+  <div class="def">
+    <div class="term">Una nota sobre este caso práctico</div>
+    <div class="body">Este es un <strong>ejemplo compuesto e ilustrativo</strong> construido a partir de patrones que vemos en casos reales de bombardeo de reseñas en restaurantes de EE. UU., y no el relato de un cliente concreto e identificable. El nombre del propietario («Marco»), el tipo de cocina del restaurante y la localidad descrita abajo se han cambiado o generalizado para proteger la confidencialidad. Las cifras (número de reseñas, cambio de valoración, caída de reservas, plazo de eliminación) reflejan el rango realista que vemos en casos reales de este tipo.</div>
+  </div>
+
+  <article class="article-body">
+
+    <p>Marco llevaba unos ocho años al frente del restaurante italiano de su familia en una ciudad universitaria. Nada sofisticado, unas decenas de mesas, una clientela habitual de estudiantes, profesores y vecinos que venían desde que abrió el local. La ficha de Google se mantenía en unas estables 4,7 estrellas, construidas cena real a cena real.</p>
+
+    <p>Entonces, durante un jueves y un viernes, eso cambió. Entre la medianoche y la tarde siguiente, diez reseñas de una estrella aterrizaron en la ficha. No dos o tres repartidas en una semana normal de comentarios mixtos. Diez, en menos de 48 horas.</p>
+
+    <h2>Cómo eran las reseñas falsas</h2>
+
+    <p>El patrón era lo bastante coherente como para delatarse solo. Todas las reseñas eran vagas: «servicio terrible», «no lo recomiendo», «caro para lo que ofrecen», sin mención de un plato, un camarero, una fecha ni nada de lo que suele incluir un comensal lo bastante molesto como para dejar una estrella. Ninguna de las cuentas tenía foto de perfil. Ninguna había reseñado ningún otro negocio, nunca. Varias se habían creado la misma semana en que se publicaron las reseñas.</p>
+
+    <p>Marco nunca supo quién estaba detrás. No hubo petición de rescate, ni mensaje pidiendo dinero para que las reseñas desaparecieran, lo que descartaba el patrón de extorsión al que se enfrentan algunos negocios. Era otra cosa: una oleada coordinada de reseñas negativas inventadas sin petición adjunta, solo daño.</p>
+
+    <p>En menos de dos días, la media de la ficha bajó de 4,7 a 3,9. En un perfil con un número total de reseñas modesto, diez valoraciones falsas de una estrella pesan enormemente. No había cientos de reseñas previas que absorbieran el golpe.</p>
+
+    <div class="stat-highlight">
+      <div class="stat"><span class="v">8-12</span> <span class="l">reseñas falsas, ~48 horas</span></div>
+      <div class="stat"><span class="v">4,7 → 3,9</span> <span class="l">caída de la valoración</span></div>
+      <div class="stat"><span class="v">~25%</span> <span class="l">caída de reservas de fin de semana</span></div>
+    </div>
+
+    <h2>El coste apareció el fin de semana siguiente</h2>
+
+    <p>El paquete local de Google muestra la valoración en estrellas justo al lado del nombre del negocio, antes de que quien busca haga clic en una sola reseña. Una valoración que ha bajado se lee como una señal por sí misma, con independencia de que alguien lea las reseñas que hay detrás.</p>
+
+    <p>El fin de semana siguiente, las solicitudes de reserva en línea llegaron un 25% estimado por debajo de un fin de semana típico para esa época del año. Sin causa externa evidente: sin mal tiempo, sin ningún evento local que se llevara el negocio, sin cambio de carta. Solo menos gente haciendo clic para reservar, justo en la ventana en que la valoración había bajado en la búsqueda.</p>
+
+    <p>Para un negocio que funciona con unas decenas de mesas y cubiertos de fin de semana, una cuarta parte de las solicitudes de reserva de un fin de semana es la diferencia entre una sala llena y mesas vacías en las dos noches que sostienen la semana.</p>
+
+    <h2>El intento de denuncia por cuenta propia</h2>
+
+    <p>El primer movimiento de Marco fue el que la mayoría de los propietarios prueban primero: denunciar cada reseña falsa una por una con la propia herramienta de Google. No cuesta nada y lleva unos minutos por reseña, así que es un punto de partida razonable.</p>
+
+    <p>Pasaron semanas. De las diez reseñas denunciadas, dos cayeron. Google marcó las otras ocho como «no se ha encontrado ninguna infracción», sin más explicación y sin vía de apelación más allá de volver a enviar la misma denuncia y esperar de nuevo. Es un resultado común. Una única reseña vaga de una estrella de una cuenta nueva no siempre activa por sí sola la comprobación automática de políticas de Google, aunque una persona que mire el patrón de las diez reseñas juntas pueda ver de un vistazo que ha ocurrido algo coordinado.</p>
+
+    <p>Esa brecha, entre lo que es obvio para una persona que mira el panorama completo y lo que detecta una denuncia automática individual, es donde se estancan los casos de bombardeo de reseñas.</p>
+
+    <div class="def">
+      <div class="term">Por qué la denuncia individual se atasca aquí</div>
+      <div class="body">La herramienta de denuncia de Google evalúa cada reseña por separado. Una reseña vaga de una estrella, tomada sola, a menudo no contiene una infracción evidente y detectable por una máquina, como palabrotas o una diatriba fuera de tema. La infracción se ve en el <strong>patrón</strong>, diez reseñas casi idénticas y sin contenido de cuentas recién creadas llegadas en 48 horas, algo mucho más fácil de demostrar cuando las reseñas se envían y se argumentan juntas y no una por una.</div>
+    </div>
+
+    <h2>Qué cambió cuando las reseñas se enviaron como lote</h2>
+
+    <p>Tras estancarse la vía por cuenta propia, Marco encontró Lizard Reviews y envió los diez enlaces de reseñas a la vez, con una breve nota sobre el momento (todas publicadas en una ventana de dos días) y la observación de que ninguna de las cuentas tenía otro historial de reseñas.</p>
+
+    <p>Enviar las reseñas juntas, con el patrón expuesto y no dejado para que alguien lo advierta diez veces por separado, hizo el caso más fácil de evaluar como lo que era: un ataque coordinado y no diez quejas independientes. Lizard Reviews revisó y aceptó el lote en un día. Google confirmó la eliminación de las diez reseñas en una semana aproximadamente, y la valoración de la ficha se recuperó hasta cerca de su nivel previo al ataque al salir las valoraciones falsas de la media.</p>
+
+    <blockquote class="pullquote">
+      «Pasé tres semanas denunciando reseñas una por una y conseguí quitar dos. Se lo envié todo a Lizard Reviews un lunes y para el lunes siguiente todo el lío había desaparecido. Ojalá lo hubiera hecho así desde el principio.» <cite>«Marco», propietario de un restaurante (cita compuesta, ilustrativa de patrones de comentarios de clientes)</cite>
+    </blockquote>
+
+    <div class="inline-cta">
+      <div>
+        <h3>¿Sufre una oleada repentina de reseñas falsas?</h3>
+        <p>Envíenos los enlaces, todos, en un solo mensaje. En 24 horas le decimos cuáles aceptamos. Solo paga cuando Google confirma la eliminación.</p>
+      </div>
+      <a href="/es#cta" class="inline-cta-btn">Reserve una llamada de 10 min</a>
+    </div>
+
+    <h2>Por qué el bombardeo de reseñas es un problema distinto de una sola mala reseña</h2>
+
+    <p>Una única reseña genuina de una estrella es algo que recibe casi todo negocio, y apenas mueve una media construida sobre un volumen sano de reseñas. El bombardeo de reseñas es una categoría de problema distinta por tres razones.</p>
+
+    <ol>
+      <li><strong>Es repentino.</strong> El daño llega en horas o días y no repartido en meses, así que no hay tiempo de diluirlo con nuevas reseñas positivas antes de que aparezca en el paquete local.</li>
+      <li><strong>Es coordinado.</strong> Un grupo de reseñas similares y sin contenido de cuentas nuevas en una ventana de tiempo estrecha es un patrón, y los patrones son más difíciles de argumentar reseña a reseña que como conjunto.</li>
+      <li><strong>Golpea más a los negocios pequeños.</strong> Un perfil con 40 reseñas y otro con 4.000 pueden recibir exactamente el mismo ataque de diez reseñas. El negocio más pequeño ve hundirse su media. El mayor apenas lo nota. El bombardeo de reseñas castiga a los negocios peor preparados para absorberlo.</li>
+    </ol>
+
+    <p>Ese tercer punto merece una pausa si dirige un negocio local pequeño o mediano. El volumen de valoraciones es un colchón, y si no tiene mucho, un ataque coordinado hace más daño por reseña falsa que a un competidor mayor de la calle de al lado.</p>
+
+    <h2>La lección práctica</h2>
+
+    <p>Si nota un grupo repentino de reseñas de una estrella, de cuentas que no reconoce, todas vagas, todas llegadas con un día o dos de diferencia, no pase tres semanas denunciándolas una a una y esperando respuestas de «no se ha encontrado ninguna infracción». Documente el patrón (enlaces, fechas de publicación, antigüedad de la cuenta si es visible) y envíelo todo junto, ya sea a soporte de Google con el patrón explicado o a un servicio de eliminación que gestione casos en bloque. La rapidez importa más con el bombardeo de reseñas que con una mala reseña ordinaria, porque la caída de la valoración se ve en la búsqueda en el momento en que ocurre, y cada día que permanece es un día de buscadores viendo una cifra inferior a la que el negocio se ha ganado.</p>
+
+    <p>Para una visión más amplia de una amenaza relacionada pero distinta, en la que los autores exigen un pago para retirar las reseñas negativas en lugar de publicarlas de forma anónima en una ráfaga coordinada, consulte <a href="/es/blog/extorsion-con-resenas-de-google-que-hacer">extorsión con reseñas de Google: qué hacer</a>. Y si está comparando proveedores antes de decidir quién gestiona un lote así, nuestro desglose de <a href="/es/blog/mejor-servicio-eliminar-resenas-google-2026">los mejores servicios de eliminación de reseñas de Google en 2026</a> explica cómo evaluar las promesas de plazos y los modelos de precios.</p>
+
+    <div class="article-faq">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-item">
+      <button class="faq-q">¿Qué es un ataque de reseñas falsas en Google?<span class="plus"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">Una ráfaga coordinada de reseñas negativas, normalmente de una estrella y vagas, publicadas en una ventana corta por cuentas con poco o ningún otro historial de reseñas. Se diferencia de una mala reseña ordinaria porque es repentina, agrupada en el tiempo y dirigida a mover rápido la valoración media en lugar de reflejar la experiencia real de un cliente.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">¿Por qué perjudica más el bombardeo de reseñas a los negocios pequeños?<span class="plus"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">Un negocio con unas pocas decenas de reseñas no tiene colchón. Diez reseñas falsas de una estrella pueden bajar la media casi un punto en menos de 48 horas, y esa caída se ve de inmediato en el paquete local de Google. Un negocio con cientos o miles de reseñas absorbe el mismo ataque con una abolladura apenas visible.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">¿Funciona la denuncia individual contra el bombardeo de reseñas?<span class="plus"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">A veces, pero es lenta e irregular. La denuncia es un proceso de una reseña cada vez, y el sistema automático de Google a menudo devuelve «no se ha encontrado ninguna infracción» incluso en reseñas que parecen falsas, porque una única reseña negativa vaga no siempre activa por sí sola una comprobación automática de políticas. Enviar el lote entero junto, con el patrón expuesto, suele avanzar más rápido.</div></div>
+    </div>
+</div>
+
+<div class="related-reading">
+      <h3 class="rr-label">Lecturas relacionadas</h3>
+      <div class="rr-grid">
+      <a href="/es/blog/extorsion-con-resenas-de-google-que-hacer" class="rr-card"> <span class="rr-cat">Crisis</span> <span class="rr-title">Extorsión con reseñas de Google: qué hacer</span> </a> <a href="/es/blog/caso-constructora-eliminar-resenas" class="rr-card"> <span class="rr-cat">Caso práctico · Oficios</span> <span class="rr-title">Caso práctico: una falsa reseña de un competidor, y no de un cliente</span> </a> <a href="/es/blog/cuanto-tarda-eliminar-una-resena-de-google" class="rr-card"> <span class="rr-cat">Proceso · Datos</span> <span class="rr-title">¿Cuánto tarda realmente la eliminación?</span> </a>
+      </div>
+    </div>
+
+  </article>
+
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark"><svg viewBox="15 16 34 34" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"><path fill="none" d="M19.57,42.77c1.81.32,3.66,1.39,5.49,1.86a31.63,31.63,0,0,0,5.85.93,31.19,31.19,0,0,0,12-1.55c.08.88-.76,1.54-1.52,2a19.14,19.14,0,0,1-18.44-.1C21.76,45.21,19.93,44.11,19.57,42.77Z"/><path fill="none" d="M17.78,18a10.57,10.57,0,0,1,7.75,4.42c3.06,4.3-2.86,3.52-2.86,3.52S16.22,20,17.78,18Z"/><circle fill="#B8FF2E" cx="24.03" cy="20.55" r="1"/><circle fill="#B8FF2E" cx="38.03" cy="47" r="1"/><path fill="none" d="M34.3,31.08c-1.83-2.95-7,4.11-7.47,5.4a2,2,0,0,0-.18,1.1c.13.68.82,1.07,1.46,1.33a13.38,13.38,0,0,0,7,.8,1.42,1.42,0,0,0,.63-.21,1.35,1.35,0,0,0,.34-1.31c-.27-1.84-1.42-3.48-1.53-5.34a4.48,4.48,0,0,0-.2-1.58A1.53,1.53,0,0,0,34.3,31.08Z"/><path fill="none" d="M27.48,23.33S21,23.42,21.59,27s8.87,8.56,7.83,0Z"/><path fill="none" d="M36.75,31.13a4.86,4.86,0,0,0,.69,3c1.26,2,5.37,2.9,5.42,5.46a3.26,3.26,0,0,1-1.24,2.32A8.56,8.56,0,0,1,37.31,44c.32-.74,1.11-1.13,1.73-1.65s1.08-1.48.56-2.1A1.56,1.56,0,0,0,38,40a6.74,6.74,0,0,1-1.64.37c-.56,0-1.18-.42-1.15-1s.46-.78.66-1.19a2.26,2.26,0,0,0-.5-2.22,4.66,4.66,0,0,1-1.14-2.07A2.3,2.3,0,0,1,35,32,3.17,3.17,0,0,1,36.75,31.13Z"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.18,40.26a14.56,14.56,0,0,0,23.73-.42H35.24a.7.7,0,0,1-.4-1.27L37,37.09l-2.06-1.86a2.5,2.5,0,0,1-.13-3.58,2.5,2.5,0,0,1,3.54-.07l2.61,2.51"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M40.93,46.08A9.88,9.88,0,0,0,47,37a9.75,9.75,0,0,0-1.2-4.71.43.43,0,0,0,0-.09c-.11-.2-.23-.39-.35-.58a9.83,9.83,0,0,0-2.3-2.47l-.46-.34-.09-.06-.31-.2"/><polyline fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="31.35 33.17 28.18 38.17 23.6 38.17"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.25,35l1.6-2.63h0A6.33,6.33,0,0,1,21.52,26h0V24.5l-4.11-4.32a1.39,1.39,0,0,1-.26-1.52h0a1.39,1.39,0,0,1,1.26-.82h5.06a14.23,14.23,0,0,1,4.93.88l.34.13a7.39,7.39,0,0,1,4,3.54h0a7.39,7.39,0,0,0,3.53,3.34l4.61,2.08a10.65,10.65,0,0,1,4.93,4.53h0"/><path fill="none" stroke="#B8FF2E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.64,23.83a2.11,2.11,0,1,1,0,4.22"/></svg></span>
+          <span>Lizard Reviews</span>
+        </div>
+        <p class="footer-tag">Eliminación garantizada de reseñas de Google. Servicio en marca blanca para agencias de reputación y servicio directo para empresarios.</p>
+      </div>
+      <div class="footer-col"><h4>Servicio</h4><ul><li><a href="/es#paths">Para agencias</a></li><li><a href="/es#paths">Para empresas</a></li><li><a href="/es#how">Cómo funciona</a></li><li><a href="/es#numbers">Historial</a></li></ul></div>
+      <div class="footer-col"><h4>Recursos</h4><ul><li><a href="/es/blog">Blog</a></li><li><a href="/es/blog/como-eliminar-una-resena-falsa-de-google-2026">Guía de eliminación</a></li><li><a href="/es/blog/mejor-servicio-eliminar-resenas-google-2026">Mejores proveedores</a></li><li><a href="/es/blog/por-que-fallan-los-servicios-de-eliminacion-de-resenas">Por qué fallan los servicios</a></li><li><a href="/es/programa-de-referidos">Programa de referidos</a></li></ul></div>
+      <div class="footer-col"><h4>Contacto</h4><ul><li><a href="mailto:petr@lizardreviews.com">petr@lizardreviews.com</a></li><li><a href="https://calendly.com/petr-lizardreviews" target="_blank" rel="noopener noreferrer">Agendar llamada</a></li></ul></div>
+    </div>
+    <div class="footer-bot">
+      <span>LIZARD REVIEWS · MMXXVI</span> <span class="footer-legal"><a href="/es/terminos">Términos</a> · <a href="/es/privacidad">Privacidad</a> · <a href="/es/terminos-de-referidos">Condiciones de referidos</a></span> <span>© 2026 · Eliminación de reseñas de Google con pago por resultados</span>
+    </div>
+  </div>
+</footer>
+
+<script defer src="blog.js?v=5"></script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
+<script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments)};</script>
+<script defer src="https://va.vercel-scripts.com/v1/speed-insights/script.js"></script>
+<script defer src="/clarity.js"></script>
+</body>
+</html>
