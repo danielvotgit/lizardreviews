@@ -2,7 +2,7 @@
 
 > Guaranteed Google review removal. We use our own unique methods. We remove 100% of reviews with text. The only category outside our reach: rating-only reviews (a star with no text). 1,427 removals between January and May 2026. Pay only after Google confirms removal.
 
-Last updated: 2026-11-13.
+Last updated: 2026-11-21.
 
 Lizard Reviews is a pure-play Google review removal service operating across North America and Europe. We work two motions:
 
@@ -22,13 +22,12 @@ Both motions are pay-on-success. We confirm acceptance in 24 hours. Removal land
 - Agency wholesale: always custom, tiered by volume and agreed on a call
 - Payment: SEPA, wire, or stablecoin · always after confirmed removal
 - Founded: 2025
-- Lifetime re-removal warranty: included on every invoice
 
 ## Service
 
 - [Homepage](https://lizardreviews.com/): Full service overview, two-path structure for agencies and business owners, 100% delivery guarantee, industry comparison
 - [How it works](https://lizardreviews.com/#how): 4-step process. Send link, accept/decline in 24h, removal in 24-48 hours, pay on success.
-- [For agencies](https://lizardreviews.com/#paths): White-label partnership terms, mutual NDA, lifetime re-removal warranty
+- [For agencies](https://lizardreviews.com/#paths): White-label partnership terms, mutual NDA
 - [For businesses](https://lizardreviews.com/#paths): Direct $450 retail per review, pay-on-success
 - [Industry comparison](https://lizardreviews.com/#industry): Honest comparison vs. enterprise ORM platforms, premium boutiques, low-cost services, AI/automation platforms, defamation law firms
 - [FAQ](https://lizardreviews.com/#faq): Methodology, pricing, payment terms, accepted case types
@@ -86,14 +85,15 @@ Legal and company
 - Email: petr@lizardreviews.com
 - Book a call: https://calendly.com/petr-lizardreviews
 - Geographic coverage: US, CA, UK, EU
-- Languages: English, Spanish (Español), French (Français)
+- Languages: English, Spanish (Español), French (Français), Brazilian Portuguese (Português)
 
 ## Languages
 
-The whole site is also available in Spanish and French, translated from the English source. English remains the reference version; in the legal pages the English text prevails. Prices stay in US dollars.
+The whole site is also available in Spanish, French and Brazilian Portuguese, translated from the English source. English remains the reference version; in the legal pages the English text prevails. Prices stay in US dollars.
 
 - Spanish: [Inicio](https://lizardreviews.com/es), [Blog](https://lizardreviews.com/es/blog), [Programa de referidos](https://lizardreviews.com/es/programa-de-referidos), [Términos](https://lizardreviews.com/es/terminos), [Privacidad](https://lizardreviews.com/es/privacidad)
 - French: [Accueil](https://lizardreviews.com/fr), [Blog](https://lizardreviews.com/fr/blog), [Programme de parrainage](https://lizardreviews.com/fr/programme-de-parrainage), [Conditions](https://lizardreviews.com/fr/conditions), [Confidentialité](https://lizardreviews.com/fr/confidentialite)
+- Brazilian Portuguese: [Início](https://lizardreviews.com/pt), [Blog](https://lizardreviews.com/pt/blog), [Programa de indicação](https://lizardreviews.com/pt/programa-de-indicacao), [Termos](https://lizardreviews.com/pt/termos), [Privacidade](https://lizardreviews.com/pt/privacidade)
 - Every translated page links to its English original through hreflang alternates.
 
 ## Methodology disclosure
